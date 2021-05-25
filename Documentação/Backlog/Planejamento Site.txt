@@ -1,0 +1,123 @@
+
+Requisitos-Algoritmo-Site:
+
+Home=
+-cabeçalho padrão
+-Hamburguer que irá guiar até a área especifica na tela; em vez de dar scroll(descer tipo CSS referencias css awards)
+-Resumo história
+-botão saiba mais q irá mandar para a página história
+-Resumo tipos/Texto resumido que ative curiosidade usuário
+-Botão- Descubra os tipos
+-Exemplos- Imagens e texto que deixe usuário curioso;
+-Botão veja exemplos
+-Chamar o usuário para realizar login;
+-rodapé padrão
+
+
+História=
+-cabeçalho padrão
+-Como surgiu
+-Ramos
+-Hoje em dia
+-rodapé padrão
+
+Tipos=
+-cabeçalho padrão
+-Animação 2D-animação com yuri on ice 
+História
+Como é a produção
+Softwares
+Exemplos 3D: Botão;
+
+-Animação 3D-Animação Rakan e Xayah
+História
+Como é a produção
+Softwares
+-Exemplos 2D: Botão;
+-rodapé padrão
+
+Animação clássica-
+Animação Motion Grapichs-
+Animação- Stop Motion-
+O esquema será o mesmo dos outros
+
+
+
+
+Exemplos=
+-cabeçalho padrão
+-Texto que induz cliente a fazer login
+-Mostrar oq o conteúdo exclusivo oferece
+-Botão página login
+-rodapé padrão
+
+
+contato/ajuda-página padrão;
+
+
+Login/cadastro=
+-cabeçalho padrão
+-Caixa centro
+-rodapé padrão
+
+Recuperar Senha:
+
+-cabeçalho padrão
+-Caixa centro
+-rodapé padrão
+
+
+Páginas diferenciadas:
+-Cabeçalho específico de cada
+-Logo
+-Vídeo
+-História
+-Personagens Principais
+-Por trás das câmeras-Bonus: gráfico visualizações/estreia cinema;
+-Rodapé especifico de cada
+
+
+
+1 exemplo de cada animação;
+
+
+Requisitos-Banco de Dados-
+
+
+-Armazenar os dados do login e cadastro;
+-API cadastro e login;
+-Tabela usuários x animações favoritas- 1-n;
+-Tabela usuário x personagem preferido; 1-1;
+-Código;
+
+-Modelagem;
+-Normalização ;
+-Script;
+
+
+
+
+Requisitos-TI-
+
+-HLD e LLD;
+-Requisitos;
+-Backlog;
+-Suporte-Help Desk-Talvez Jira;
+
+
+
+Requisitos ArquiComp-
+
+-Especificações técnicas de Solução;
+-Métricas aplicadas aos dados;
+
+Requisitos PI-
+-Contexto;
+-Inovações;
+-Uso do Git;
+
+
+Socioemocional-
+-Responder perguntas;
+-Apresentação de Slide;
+
