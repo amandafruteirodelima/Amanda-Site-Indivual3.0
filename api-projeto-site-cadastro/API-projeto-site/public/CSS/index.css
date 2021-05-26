@@ -1,0 +1,548 @@
+/*INICIO DO CABECALHO*/
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #0d0d0d;
+
+}
+
+/*INICIO DO CABECALHO*/
+
+.cabecalho {
+  width: 100%;
+  height: 80px;
+  background-color: #0d0d0dc2;
+  border-bottom: 4px solid #d91a3a;
+  position: relative;
+
+
+
+}
+
+.caixa_cabecalho {
+
+  max-width: 95%;
+
+}
+
+.cabecalho nav {
+  float: right;
+
+}
+
+
+.cabecalho nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.colorido_lista {
+  color: #d91a3a;
+}
+
+.cabecalho a:hover {
+
+  font-size: 1.25em;
+  transition: 0.5s;
+  color: #d91a3a;
+
+}
+
+.cabecalho ul {
+  padding-top: 30px;
+  list-style: none;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+}
+
+.cabecalho ul li {
+  display: inline;
+  font-size: 1.3em;
+  margin-right: 40px;
+
+}
+
+
+.login_cor {
+  padding: 6px;
+  background-color: #0396a6;
+  border-radius: 40px;
+  color: white;
+}
+
+/*FIM DO CABECALHO*/
+
+
+
+
+/*INICIO DO CONTEÚDO*/
+
+/*INICIO DO TÍTULO*/
+
+#div_titulo {
+
+  position: absolute;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 3em;
+  text-align: center;
+
+}
+
+/*FIM DO TÍTULO*/
+
+
+/*INICIO DO VÍDEO*/
+
+
+#div_video {
+  text-align: center;
+
+}
+
+.video_home {
+
+  width: 1349px;
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.548);
+
+}
+
+.link_video_home {
+  margin: 0px;
+
+}
+
+/*FIM DO VÍDEO*/
+
+
+/*INICIO DO CONTEUDO HISTORIA*/
+
+/*PRIMEIRA PARTE*/
+
+
+#div_conteudo_4 {
+  top: 800px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 40%;
+  width: 60%;
+  float: left;
+  border-radius: 18px;
+  left: 20%;
+  background-image: url(https://artgeist.com.br/wp-content/uploads/elementor/thumbs/animacao-3d-nwvy4wfg3ugikuj5kpmz1trwbgrzfjtbsi7dp682h4.jpg);
+  background-size: cover;
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+#div_conteudo_4:hover {
+  height: 42%;
+  width: 61%;
+  transition: 0.5s;
+}
+
+#div_conteudo_4 h3 {
+  padding-top: 30px;
+  color: white;
+  font-size: 30px;
+  background-color: #2323237e;
+  border-radius: 20px;
+  height: 120px;
+
+}
+
+
+.div_but_ani_historia {
+  position: absolute;
+  top: 173%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.btn_ani_3 {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #9c53ed;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn_ani_3:hover {
+  font-size: 18px;
+}
+
+.btn_ani_3::before {
+  background: #9c53ed;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn_ani_historia_2::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn_ani_historia_2:hover::before {
+  width: 100%;
+}
+
+
+/*SEGUNDA PARTE*/
+
+#div_conteudo_divs {
+
+  width: 90%;
+  height: 45%;
+  position: absolute;
+  top: 1400px;
+  left: 70px;
+
+
+
+}
+
+#div_conteudo_1 {
+  margin-left: 60px;
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 100%;
+  width: 26%;
+  float: left;
+  margin-right: 80px;
+  border-radius: 18px;
+  background-image: url(https://lh3.googleusercontent.com/proxy/3REOSxtHWQz8NItX2KWfLDarszebXHrq0VjGNZSBtc0CsJiYqgmZ4n98YKG6_p0KAmhn2HXSHzak_m3oS8YHbl6_2cjRhB-4Im_PK55lVlhn3sueTa7ZadxHLxSW);
+  background-size: cover;
+
+
+}
+
+#div_conteudo_1:hover {
+  height: 102%;
+  width: 27%;
+  transition: 00.5s;
+
+}
+
+#div_conteudo_2 {
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 100%;
+  width: 26%;
+  float: left;
+  margin-right: 80px;
+  border-radius: 18px;
+  background-image: url(https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/05/hercules.jpg);
+  background-size: cover;
+}
+
+#div_conteudo_2:hover {
+  height: 102%;
+  width: 27%;
+  transition: 00.5s;
+
+}
+
+#div_conteudo_3 {
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 100%;
+  width: 26%;
+  float: left;
+  border-radius: 18px;
+  background-image: url(https://poltronanerd.com.br/wp-content/uploads/2020/04/poltrona-horadeaventura.png);
+  background-size: cover;
+
+}
+
+#div_conteudo_3:hover {
+  height: 102%;
+  width: 27%;
+  transition: 00.5s;
+
+}
+
+
+
+.div_but_ani {
+  position: absolute;
+  top: 270%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.btn_ani {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #03a678;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn_ani:hover {
+  font-size: 18px;
+}
+
+.btn_ani::before {
+  background: #03a678;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn_ani_2::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn_ani_2:hover::before {
+  width: 100%;
+}
+
+.texto_pequeno{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  background-color: #23232388;
+  border-radius: 20px;
+  max-width: 90%;
+  margin-left: 16px;
+}
+
+/*TERCEIRA PARTE*/
+
+
+
+#div_conteudo_5 {
+  top: 2000px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 40%;
+  width: 60%;
+  float: left;
+  border-radius: 18px;
+  left: 20%;
+  background-image: url(https://universoretro.com.br/wp-content/uploads/2019/10/steamboat-willie.jpg);
+  background-size: cover;
+}
+
+
+#div_conteudo_5:hover {
+  height: 42%;
+  width: 61%;
+  transition: 0.5s;
+}
+
+
+#div_conteudo_5 h3 {
+  padding-top: 50px;
+  margin-top: 40px;
+  color: white;
+  font-size: 30px;
+  background-color: #2323237e;
+  border-radius: 20px;
+  height: 120px;
+  text-align: center;
+
+}
+
+
+
+.div_but_ani_exemplos {
+  position: absolute;
+  top: 357%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.btn_ani_4 {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #f29f05;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn_ani_4:hover {
+  font-size: 18px;
+}
+
+.btn_ani_4::before {
+  background: #f29f05;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn_ani_exemplos_2::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn_ani_exemplos_2:hover::before {
+  width: 100%;
+}
+
+/*FIM DO CONTEUDO HISTORIA*/
+
+
+/*QUARTA PARTE*/
+
+#div_conteudo_6 {
+  top: 2600px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.822);
+  height: 40%;
+  width: 60%;
+  float: left;
+  border-radius: 18px;
+  left: 20%;
+  background-image: url(https://www.ocamundongo.com.br/wp-content/uploads/2016/03/nick-celular-zootopia-phone-ocamundongo.jpg);
+  background-size: cover;
+}
+
+#div_conteudo_6:hover {
+  height: 42%;
+  width: 61%;
+  transition: 0.5s;
+
+}
+
+#div_conteudo_6 h3 {
+  padding-top: 50px;
+  margin-top: 40px;
+  color: white;
+  font-size: 30px;
+  background-color: #2323237e;
+  border-radius: 20px;
+  height: 120px;
+  text-align: center;
+
+}
+
+
+.div_but_ani_contato {
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.btn_ani_5 {
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #0396a6;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn_ani_5:hover {
+  font-size: 18px;
+}
+
+.btn_ani_5::before {
+  background: #0396a6;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn_ani_contato_2::before {
+  width: 0%;
+  height: 100%;
+}
+
+.btn_ani_contato_2:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+/*FIM DO CONTEÚDO*/
+
+
+
+/*INICIO DO RODAPÉ*/
+
+.rodape {
+  background-color: #d91a3a;
+  text-align: center;
+  color: white;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -2500px;
+
+
+}
+
+
+.rodape span {
+  text-align: center;
+  bottom: 10px;
+  left: 500px;
+  position: absolute;
+
+}
+
+/*FIM DO RODAPÉ*/
