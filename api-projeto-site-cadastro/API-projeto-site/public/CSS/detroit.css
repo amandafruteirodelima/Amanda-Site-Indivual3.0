@@ -20,30 +20,16 @@ body {
     border-bottom: 4px solid #5962e1d2;
     position: relative;
 
-
-
 }
 
 .caixa_cabecalho {
 
-    max-width: 100%;
+    max-width: 90%;
     padding: 0px;
     margin: 0px;
 
-
-
 }
 
-
-
-.cabecalho nav {
-    float: left;
-    margin-left: 0px;
-    padding-left: 140px;
-    
-
-
-}
 
 .cabecalho li:hover {
 
@@ -56,7 +42,7 @@ body {
     padding-top: 7px;
     list-style: none;
     color: white;
-    width: 100%;
+    width: 99%;
 }
 
 .cabecalho ul li {
@@ -81,6 +67,8 @@ a:hover {
 
 /*FIM DO CABECALHO*/
 
+
+
 /*INICIO DO RODAPÉ*/
 
 .rodape {
@@ -92,16 +80,13 @@ a:hover {
     width: 100%;
     left: 0px;
     bottom: -1500px;
+    padding-top: 20px;
+
 
 }
 
 
-.rodape p {
-    padding: 10px;
-    padding-bottom: 0px;
-    margin: 0;
 
-}
 
 /*FIM DO RODAPÉ*/
 
