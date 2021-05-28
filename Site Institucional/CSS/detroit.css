@@ -180,39 +180,56 @@ a:hover {
     margin-bottom: 500px;
 }
 
-.img_personagem {
+#img_personagem {
     float: left;
     margin-right: 100px;
     background-color: white;
     height: 300px;
     width: 250px;
     border-radius: 15px;
+  
 
 }
 
-.img_personagem:hover {
+#img_personagem:hover {
     height: 310px;
     width: 260px;
     transition: 0.5s;
+  
 
 }
 
 
-.informacoes_personagem {
+#informacoes_personagem {
     float: left;
-    background-color: white;
+    background-color: rgba(48, 48, 48, 0.349);
+    color: white;
     height: 300px;
     width: 450px;
     border-radius: 15px;
-
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  
 }
 
-.informacoes_personagem:hover {
-    height: 310px;
-    width: 460px;
-    transition: 0.5s;
-
+span {
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.img_camera {
+    width: 500px; 
+    padding-left: 200px;
+}
+
 
 /*FIM DO CONTEÚDO PERSONAGEM*/
 
@@ -228,7 +245,7 @@ a:hover {
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -1500px;
+    bottom: -2100px;
     padding-top: 20px;
 
 }

@@ -12,4 +12,10 @@ ANIMACAO_PREFERIDA varchar(40)
 
 select*from USUARIOS;
 
+insert into usuarios values (Null, 'Amanda', 'amanda@fruteiro','12345','Detroit');
+
+start transaction;
+update usuarios set nome = 'Gabriel' where ID_USUARIOS = 1000;
+rollback;
+
 drop table USUARIOS;

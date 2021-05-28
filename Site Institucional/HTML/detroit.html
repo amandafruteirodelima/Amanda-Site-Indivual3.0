@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/detroit.css">
     <title>Detroit Become Human</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="../IMGS/detroi.png" />
 </head>
 
 <body>
@@ -66,7 +69,7 @@
 
         <div class="div_texto">
             <span>
-                O jogo se passa no ano de 2038. A tecnologia está em sua evolução máxima! A 3° guerra mundial está
+                <p>O jogo se passa no ano de 2038. A tecnologia está em sua evolução máxima! A 3° guerra mundial está
                 prestes a
                 eclodir e uma grande onda de desemprego assola a população dos EUA principalmente da cidade de
                 Detroit.Desemprego este causado pela criação de androids pela maior empresa chamada CyberLife. Além
@@ -74,7 +77,7 @@
                 Androids estão apresentando determinados "defeitos", algo que está preocupando as autoridades.É
                 neste
                 contexto
-                que você controlará os 3 principais personagens do jogo. Connor,Kara e Markus.
+                que você controlará os 3 principais personagens do jogo. Connor,Kara e Markus.<p>
             </span>
 
 
@@ -98,9 +101,11 @@
 
         <div id="div_personagens">
 
-            <div class="img_personagem">IMAGEM PERSONAGEM</div>
+            
+               <img id="img_personagem" src="" alt="">
+            
 
-            <div class="informacoes_personagem">INFORMAÇÕES</div>
+            <div id="informacoes_personagem"></div>
 
         </div>
 
@@ -109,38 +114,35 @@
 
         <!--INICIO DA PARTE POR TRÁS DAS CÂMERAS-->
 
-
         <h2 class="titulos">Por trás das câmeras</h2>
 
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <img class="img_camera" src="https://i.ytimg.com/vi/JZKKVuSOsNc/maxresdefault.jpg" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+
+        </span>
+
         <!--FIM DA PARTE POR TRÁS DAS CÂMERAS-->
-
-
-
-        <!-- 
-       
-
-        <div class="limitar_titulo">
-            <h2 class="titulo_topicos">Por trás das câmeras</h2>
-        </div>
-        <div class="texto_conteudo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid impedit saepe reprehenderit sunt
-            esse recusandae voluptate deleniti voluptates magni maxime amet dignissimos magnam, ex obcaecati nisi
-            tempora
-            pariatur beatae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid impedit saepe reprehenderit sunt
-            esse recusandae voluptate deleniti voluptates magni maxime amet dignissimos magnam, ex obcaecati nisi
-            tempora
-            pariatur beatae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid impedit saepe reprehenderit sunt
-            esse recusandae voluptate deleniti voluptates magni maxime amet dignissimos magnam, ex obcaecati nisi
-            tempora
-            pariatur beatae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid impedit saepe reprehenderit sunt
-            esse recusandae voluptate deleniti voluptates magni maxime amet dignissimos magnam, ex obcaecati nisi
-            tempora
-            pariatur beatae.
-            <div> -->
-
 
     </div>
     <!--FIM DO CONTEUDO-->
@@ -152,7 +154,6 @@
     <!--INÍCIO DO RODAPÉ-->
     <div class="rodape">
         &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
-        
     </div>
     <!--FIM DO RODAPÉ-->
 
@@ -165,6 +166,12 @@
     function aparecer_personagem_1() {
 
         div_personagens.style.display = 'block';
+        img_personagem.src = 'https://cdn.vox-cdn.com/thumbor/ewoYWBq9MauLxB7FULwq5OIUCe4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13636275/5fcb5d66f7f4077ad9f392e8b8fb61c4.jpg';
+        informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b> Connor;<br>
+        <b>Modelo:</b> RK800<br>
+        É um protótipo criado pela CyberLife para investicar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! `
+        
+        
 
 
     }
@@ -172,6 +179,11 @@
     function aparecer_personagem_2() {
 
         div_personagens.style.display = 'block';
+        img_personagem.src = 'https://static.wikia.nocookie.net/p__/images/e/e4/Kara-1.jpg/revision/latest?cb=20200326092018&path-prefix=protagonist'
+        informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b> Kara;<br>
+        <b>Modelo:</b>AX400<br>
+        É um protótipo criado pela CyberLife para investicar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! `
+
 
 
     }
@@ -179,6 +191,10 @@
     function aparecer_personagem_3() {
 
         div_personagens.style.display = 'block';
+        img_personagem.src = 'https://i.pinimg.com/originals/e1/3a/6b/e13a6b56053e4060af1b9a57f757c8e1.jpg'
+        informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b> Markus;<br>
+        <b>Modelo:</b>RK200<br>
+        É um protótipo criado pela CyberLife para investicar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! `
 
 
     }
@@ -186,6 +202,11 @@
     function aparecer_personagem_4() {
 
         div_personagens.style.display = 'block';
+       img_personagem.src = 'https://static.wikia.nocookie.net/detroit-become-human/images/3/39/Hank_2.jpg/revision/latest?cb=20200519141835';
+       informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b> Hank Anderson;<br>
+        <b>Cargo:</b> Subtenente<br>
+        É um protótipo criado pela CyberLife para investicar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! `
+
 
 
     }
@@ -193,13 +214,12 @@
     function aparecer_personagem_5() {
 
         div_personagens.style.display = 'block';
+        img_personagem.src = 'https://static.wikia.nocookie.net/detroit-become-human/images/c/ce/Elijah_Kamski_2.jpg/revision/latest?cb=20200424235847';
+        informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b>Elijah Kamski;<br>
+        <b>Cargo:</b>Criador dos Androids<br>
+        É um protótipo criado pela CyberLife para investicar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! `
 
-
-    }
-    function aparecer_personagem_6() {
-
-        div_personagens.style.display = 'block';
-
+       
 
     }
 
