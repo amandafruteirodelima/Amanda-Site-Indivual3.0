@@ -140,7 +140,7 @@ body {
   float: left;
   border-radius: 18px;
   left: 20%;
-  background-image: url(https://artgeist.com.br/wp-content/uploads/elementor/thumbs/animacao-3d-nwvy4wfg3ugikuj5kpmz1trwbgrzfjtbsi7dp682h4.jpg);
+  background-image: url(../IMGS/big_hero_home.jpg);
   background-size: cover;
   padding-top: 30px;
   text-align: center;
@@ -234,7 +234,7 @@ body {
   float: left;
   margin-right: 80px;
   border-radius: 18px;
-  background-image: url(https://www.oficinadanet.com.br/imagens/post/34144/dois-irmaos-uma-jornada-fantastica-1.jpg);
+  background-image: url("../IMGS/dois_irmaos_home.jpg");
   background-size: cover;
 
 
@@ -254,7 +254,7 @@ body {
   float: left;
   margin-right: 80px;
   border-radius: 18px;
-  background-image: url(https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/05/hercules.jpg);
+  background-image: url("../IMGS/hercules_home.jpg");
   background-size: cover;
 }
 
@@ -271,7 +271,7 @@ body {
   width: 26%;
   float: left;
   border-radius: 18px;
-  background-image: url(https://poltronanerd.com.br/wp-content/uploads/2020/04/poltrona-horadeaventura.png);
+  background-image: url("../IMGS/hora_de_aventura_home.png");
   background-size: cover;
 
 }
@@ -355,7 +355,7 @@ body {
   float: left;
   border-radius: 18px;
   left: 20%;
-  background-image: url(https://universoretro.com.br/wp-content/uploads/2019/10/steamboat-willie.jpg);
+  background-image: url("../IMGS/mickey_home.jpg");
   background-size: cover;
 }
 
@@ -442,7 +442,7 @@ body {
   float: left;
   border-radius: 18px;
   left: 20%;
-  background-image: url(https://www.ocamundongo.com.br/wp-content/uploads/2016/03/nick-celular-zootopia-phone-ocamundongo.jpg);
+  background-image: url("../IMGS/zootopia_home.jpg");
   background-size: cover;
 }
 
