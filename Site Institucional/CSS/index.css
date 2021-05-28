@@ -532,17 +532,11 @@ body {
   width: 100%;
   left: 0px;
   bottom: -2500px;
+  padding-top: 20px;
 
 
 }
 
 
-.rodape span {
-  text-align: center;
-  bottom: 10px;
-  left: 500px;
-  position: absolute;
-
-}
 
 /*FIM DO RODAPÉ*/

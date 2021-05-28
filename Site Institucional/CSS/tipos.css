@@ -10,7 +10,7 @@ body {
     height: 100%;
     margin: 0;
     background-color: #242424d2;
-    background-image: url('https://image.tmdb.org/t/p/original/fMdtO9Vk5VG42xi6QUMlaobR44W.jpg');
+    background-image: url("../IMGS/fundo_tipos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -171,18 +171,14 @@ left: 15%;
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -8100px;
+    bottom: -8120px;
+    padding-top: 20px;
+    
     
 
 }
 
 
-.rodape p {
-    padding: 10px;
-    padding-bottom: 0px;
-    margin: 0;
-
-}
 
 /*FIM DO RODAPÉ*/
 
