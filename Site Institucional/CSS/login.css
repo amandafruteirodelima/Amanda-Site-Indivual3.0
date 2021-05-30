@@ -357,6 +357,17 @@ button{
           transform:translate3d(640px, 0, 0);
 }
 
+
+.combo_sel{
+  width: 270px;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.397);
+  border: 0px;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+
 /*Botão GIRATÓRIO LOGIN E CADASTRO*/
 
 .img-btn{

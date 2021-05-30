@@ -17,10 +17,10 @@ body {
     width: 100%;
     height: 80px;
     background-color: #9b9b9b;
-    background-image: linear-gradient(to bottom, #eece40dc, #ff6586);
-    border-bottom: 4px solid #eece40dc;
+    background-image: linear-gradient(to bottom, #e66d7b, #fffd83);
+    border-bottom: 4px solid #e66d7b;
     position: relative;
-    color: rgb(150, 150, 150);
+    color: whitesmoke;
 }
 
 .caixa_cabecalho {
@@ -47,8 +47,8 @@ body {
 .cabecalho ul {
     padding-top: 7px;
     list-style: none;
-    color: rgb(150, 150, 150);
-    width: 99%;
+    color: whitesmoke;
+    width: 97%;
 
 }
 
@@ -63,12 +63,12 @@ body {
 }
 
 a {
-    color: rgb(97, 97, 97);
+    color: white;
     text-decoration: none;
 }
 
 a:hover {
-    color: #8629f0;
+    color: rgb(16, 0, 54);
 }
 
 /*FIM DO CABECALHO*/
@@ -107,7 +107,7 @@ a:hover {
     padding-top: 10px;
     margin-left: 35%;
     text-align: center;
-    background-color: #53adeddc;
+    background-color: #e66d7b;
     border-radius: 15px;
     width: 300px;
     height: 35px;
@@ -154,11 +154,12 @@ a:hover {
     border-radius: 3px;
     font-size: 20px;
     margin-right: 20px;
-    background: -webkit-linear-gradient(left, #53adedb4, #9b53edad);
+    background: -webkit-linear-gradient(left, #e66d7b, #fffd83);
     color: white;
     cursor: pointer;
 
 }
+
 
 #div_personagens {
     margin-top: 90px;
@@ -169,7 +170,7 @@ a:hover {
     margin-bottom: 500px;
 }
 
-.img_personagem {
+#img_personagem {
     float: left;
     margin-right: 100px;
     background-color: white;
@@ -177,31 +178,48 @@ a:hover {
     width: 250px;
     border-radius: 15px;
 
+
 }
 
-.img_personagem:hover {
+#img_personagem:hover {
     height: 310px;
     width: 260px;
     transition: 0.5s;
+  
 
 }
 
 
-.informacoes_personagem {
+#informacoes_personagem {
     float: left;
-    background-color: white;
+    background-color: rgba(48, 48, 48, 0.349);
+    color: white;
     height: 300px;
     width: 450px;
     border-radius: 15px;
-
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  
 }
 
-.informacoes_personagem:hover {
-    height: 310px;
-    width: 460px;
-    transition: 0.5s;
-
+span {
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.img_camera {
+    width: 300px; 
+    padding-left: 330px;
+}
+
 
 /*FIM DO CONTEÚDO PERSONAGEM*/
 
@@ -210,14 +228,14 @@ a:hover {
 /*INICIO DO RODAPÉ*/
 
 .rodape {
-    background-color: rgba(119, 87, 247, 0.747);
+    background-color: #fffd83;
     text-align: center;
-    color: white;
+    color: rgb(23, 23, 23);
     height: 40px;
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -1500px;
+    bottom: -2300px;
     padding-top: 20px;
 
 }

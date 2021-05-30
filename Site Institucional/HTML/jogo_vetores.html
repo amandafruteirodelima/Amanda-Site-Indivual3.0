@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo vetores</title>
+</head>
+<body>
+
+Quiz de animação!
+Você conhece bem o universo das animações? Venha provar seu conhecimento respondendo corretamente a 10 
+perguntas aleatórias!
+
+<button onclick="perguntar()">Pergunta</button>
+
+<div id="mensagem"></div>
+<br>
+<br>
+<input id="" placeholder="Resposta:">
+<br>
+<br>
+<button onclick="responder()">Respoder</button>
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+
+var resposta_correta = 0;
+
+function perguntar(){
+
+var perguntas = ["Qual o nome da primeira animação existente no mundo?","Qual dos desenhos abaixo não é um filme da Disney?","Qual dos filmes abaixo não tem sequência?","Uma coisa incomum em filmes de animação é a existência de trilogias. Qual dos filmes abaixo não faz parte de uma trilogia?","Apesar de não ser oficialmente uma princesa, ela foi incluída na galeria devido ao seu sucesso entre as crianças. Quem é essa personagem?","Em qual das animações abaixo os animais não falam como pessoas?","Qual foi o primeiro importante personagem da animação à ter sua morte exibida explicitamente ao público infantil?","Em 2004, a Disney disse que lançaria seu último filme em 2D, porém quebrou a promessa ao lançar outro com essa tecnologia em 2009. Qual seria o último filme em 2D, segundo a própria Disney?","Toy Story é considerado o primeiro filme de animação 100% digital do mundo. Porém, outro filme, também feito em sua totalidade com tecnologia digital, foi lançado meses antes, sendo esse último o primeiro 100% digital. Que filme é esse?","Qual filme da DreamWorks tinha como cenário principal uma colônia de formigas?","Qual o filme mais famoso de animação?"]
+
+var numero_pergunta = parseInt(Math.random()*(10-0)+0)
+
+mensagem.innerHTML = `${perguntas[numero_pergunta]}`
+
+
+
+}
+
+
+
+
+</script>
