@@ -1,0 +1,245 @@
+* {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #242424d2;
+
+}
+
+/*INICIO DO CABECALHO*/
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background-color: #9b9b9b;
+    background-image: linear-gradient(to bottom, #e66d7b, #fffd83);
+    border-bottom: 4px solid #e66d7b;
+    position: relative;
+    color: whitesmoke;
+}
+
+.caixa_cabecalho {
+
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.cabecalho nav {
+    float: left;
+    margin-left: 6px;
+
+}
+
+.cabecalho li:hover {
+    font-size: 1.6em;
+    transition: 0.5s;
+    color: #8629f0;
+}
+
+.cabecalho ul {
+    padding-top: 7px;
+    list-style: none;
+    color: whitesmoke;
+    width: 97%;
+
+}
+
+.cabecalho ul li {
+    display: inline;
+    font-size: 1.4em;
+    margin-right: 80px;
+}
+
+.colorido_lista {
+    color: #9ed6ff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(16, 0, 54);
+}
+
+/*FIM DO CABECALHO*/
+
+/*INICIO DO VIDEO*/
+
+.img_animacao{
+    width: 100%;
+    height: 100%;
+}
+
+.div_video {
+    text-align: center;
+}
+
+
+
+
+/*FIM DO VIDEO*/
+
+/*INÍCIO DO CONTEÚDO HISTÓRIA*/
+
+
+.conteudo {
+    max-width: 70%;
+    text-align: justify;
+    margin: 0px;
+    padding-left: 200px;
+    color: white;
+}
+
+
+
+.titulos {
+    color: white;
+    padding-top: 10px;
+    margin-left: 35%;
+    text-align: center;
+    background-color: #e66d7b;
+    border-radius: 15px;
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+
+}
+
+.titulos:hover {
+    width: 310px;
+    height: 40px;
+    font-size: 30px;
+    transition: 00.5s;
+
+}
+
+
+.div_texto span {
+
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+
+/*FIM DO CONTEÚDO HISTÓRIA*/
+
+
+
+/*INICIO DO CONTEÚDO PERSONAGEM*/
+
+.div_but_personagens {
+    text-align: center;
+    margin-top: 50px;
+  
+}
+
+
+.but_personagens {
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-right: 20px;
+    background: -webkit-linear-gradient(left, #e66d7b, #fffd83);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+#div_personagens {
+    margin-top: 90px;
+    color: black;
+    text-align: center;
+    padding-left: 7%;
+    display: none;
+    margin-bottom: 500px;
+}
+
+#img_personagem {
+    float: left;
+    margin-right: 100px;
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+
+
+}
+
+#img_personagem:hover {
+    height: 310px;
+    width: 260px;
+    transition: 0.5s;
+  
+
+}
+
+
+#informacoes_personagem {
+    float: left;
+    background-color: rgba(48, 48, 48, 0.349);
+    color: white;
+    height: 300px;
+    width: 450px;
+    border-radius: 15px;
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+
+span {
+    font-size: 19px;
+    letter-spacing: 1.3px;
+    text-indent: 50px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img_camera {
+    width: 300px; 
+    padding-left: 330px;
+}
+
+
+/*FIM DO CONTEÚDO PERSONAGEM*/
+
+
+
+/*INICIO DO RODAPÉ*/
+
+.rodape {
+    background-color: #fffd83;
+    text-align: center;
+    color: rgb(23, 23, 23);
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -2300px;
+    padding-top: 20px;
+
+}
+
+
+
+/*FIM DO RODAPÉ*/

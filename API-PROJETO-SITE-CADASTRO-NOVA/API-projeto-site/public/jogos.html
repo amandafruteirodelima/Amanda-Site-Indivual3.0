@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/detroit.css">
+    <link rel="stylesheet" href="../CSS/jogos.css">
+    <title>Jogos</title>
+    <link rel="icon" type="image/png" href="../IMGS/detroi.png" />
+    <script type="text/javascript" src="../JS/jogo_quiz.js"></script>
+    <script type="text/javascript" src="../JS/jogo_amor.js"></script>
+    <script type="text/javascript" src="../JS/jogo_vicio_animacao.js"></script>
+
+</head>
+
+<body>
+    <!--INÍCIO DO CABECALHO-->
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+            <nav>
+                <ul>
+
+
+                    <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
+                    <li><a href="totoro.html">TOTORO</a></li>
+                    <li><a href="given.html">GIVEN</a></li>
+                    <li><a href="paranorman.html">PARANORMAN</a></li>
+                    <li><a href="kimetsu.html">SLAYER</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--FIM DO CABECALHO-->
+
+
+
+    <!--INICIO DO CONTEUDO-->
+
+
+    <!--INICIO DO QUIZ-->
+
+    <div id="jogo_quiz">
+     <h2 class="titulo">Quiz de animação!</h2>
+        <p>Você conhece bem o universo das animações? Venha provar seu conhecimento respondendo corretamente a 10
+        perguntas aleatórias!</p>
+        <br>
+        <br>
+        <button onclick="perguntar()">Pergunta</button>
+        <div id="mensagem_2_quiz"><b>Respostas corretas:</b></div>
+        <br>
+        <br>
+        <div id="mensagem_quiz"></div>
+
+
+        <!--Inicio da Pergunta 0-->
+
+        <div id="div_pergunta_0" style="display: none;">
+            <select name="" id="sel_pergunta_0">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="correta">Fantasmagorie</option>
+                <option value="errada">Branca de Neve e os Sete Anões</option>
+                <option value="errada">Yellow Submarine</option>
+                <option value="errada">Fantasia</option>
+            </select>
+        </div>
+        <!--Fim da Pergunta 0-->
+
+
+        <!--Inicio da Pergunta 1-->
+
+        <div id="div_pergunta_1" style="display: none;">
+            <select name="" id="sel_pergunta_1">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">Planeta do Tesouro</option>
+                <option value="correta">Anastasia</option>
+                <option value="errada">Dinossauro</option>
+                <option value="errada">O Cão e a Raposa</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 1-->
+
+        <!--Inicio da Pergunta 2-->
+
+
+        <div id="div_pergunta_2" style="display: none;">
+            <select name="" id="sel_pergunta_2">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="correta">Branca de Neve e os Sete Anões</option>
+                <option value="errada">Cinderela</option>
+                <option value="errada">Atlantis</option>
+                <option value="errada">Corcunda de Notre Dame</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 2-->
+
+
+        <!--Inicio da Pergunta 3-->
+
+
+        <div id="div_pergunta_3" style="display: none;">
+            <select name="" id="sel_pergunta_3">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">A Pequena Sereia</option>
+                <option value="errada">O Rei Leão</option>
+                <option value="errada">Cinderela</option>
+                <option value="correta">101 Dálmatas</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 3-->
+
+
+        <!--Inicio da Pergunta 4-->
+
+
+        <div id="div_pergunta_4" style="display: none;">
+            <select name="" id="sel_pergunta_4">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">Jasmine</option>
+                <option value="correta">Mulan</option>
+                <option value="errada">Tiana</option>
+                <option value="errada">Fiora</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 4-->
+
+
+
+        <!--Inicio da Pergunta 5-->
+
+
+        <div id="div_pergunta_5" style="display: none;">
+            <select name="" id="sel_pergunta_5">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">Dumbo</option>
+                <option value="correta">Pocahontas</option>
+                <option value="errada">Cinderela</option>
+                <option value="errada">Shrek</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 5-->
+
+
+        <!--Inicio da Pergunta 6-->
+
+
+        <div id="div_pergunta_6" style="display: none;">
+            <select name="" id="sel_pergunta_6">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="correta">Mufasa(O Rei Leão)</option>
+                <option value="errada">Mãe do Bambi(Bambi)</option>
+                <option value="errada">Síndrome(Os incríveis)</option>
+                <option value="errada">Scar(O Rei Leão)</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 6-->
+
+
+
+        <!--Inicio da Pergunta 7-->
+
+
+        <div id="div_pergunta_7" style="display: none;">
+            <select name="" id="sel_pergunta_7">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">Aladdin</option>
+                <option value="errada">A Nova Onda do Imperador</option>
+                <option value="correta">Nem Que a Vaca Tussa</option>
+                <option value="errada">Pocahontas</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 7-->
+
+
+
+        <!--Inicio da Pergunta 8-->
+
+
+        <div id="div_pergunta_8" style="display: none;">
+            <select name="" id="sel_pergunta_8">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="correta">Cassiopéia</option>
+                <option value="errada">Mostros S.A.</option>
+                <option value="errada">O Grilo Feliz</option>
+                <option value="errada">Procurando Nemo</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 8-->
+
+        <!--Inicio da Pergunta 9-->
+
+
+        <div id="div_pergunta_9" style="display: none;">
+            <select name="" id="sel_pergunta_9">
+                <option value="0">-- Selecione uma opção -- </option>
+                <option value="errada">Vida de Inseto</option>
+                <option value="errada">Os Sem-Floresta</option>
+                <option value="correta">FormiguinhaZ</option>
+                <option value="errada">O Bicho Vai Pegar</option>
+            </select>
+        </div>
+
+        <!--Fim da Pergunta 9-->
+
+
+        <br>
+        <button onclick="responder()">Respoder</button>
+
+    </div>
+
+    <!--FIM DO QUIZ-->
+
+    <!--INICIO DO VOCÊ É UM VICIADO EM ANIMAÇÃO-->
+
+    <div id="formulario_horas_animacao">
+
+       <h2 class="titulo"> Vamos ver o quão apaixonado por animações você é!</h2>
+        <br>
+        <br>
+        Preencha os campos abaixo para conferir seu resultado!
+        <br>
+        <br>
+        Digite quantas horas por dia você assiste animação:
+        <input type="text" id="inpt_horas_dias" placeholder="Horas diárias:">
+        <br>
+        <br>
+        Digite quanto anos você tem:
+        <input type="text" id="inpt_anos" placeholder="Quantos anos:">
+        <br>
+        <br>
+        <button onclick="calcular()">Calcular</button>
+        <div id="mensagem"></div>
+        <br>
+        <br>
+        <img id="retrato" src="" alt="">
+    </div>
+
+
+
+    <!--FIM DO VOCÊ É UM VICIADO EM ANIMAÇÃO-->
+
+
+
+
+    <!--INICIO DO AMOR PERSONAGEM-->
+
+    <div id="jogo_repeticao">
+
+        <h2 class="titulo">Demonstre seu amor pelo seu personagem preferido!</h2>
+        <p>Qual o nome do seu personagem preferido?</p>
+        <br>
+        <input type="text" id="inpt_ama" placeholder="Personagem preferido:">
+        <br>
+        <br>
+        <p>O quanto você ama esse personagem?</p>
+        <br>
+        <input type="text" id="inpt_quanto" placeholder="Quanto:">
+        <br>
+        <br>
+        <button onclick="expressar()">Expressar amor</button>
+        <br>
+        <br>
+        <div id="mensagem_amor"></div>
+    </div>
+
+
+    <!--FIM DO AMOR PERSONAGEM-->
+
+
+    <!--FIM DO CONTEUDO-->
+
+
+
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+    
+var perguntas = ["Qual o nome da primeira animação existente no mundo?",
+"Qual dos desenhos abaixo não é um filme da Disney?",
+"Qual dos filmes abaixo não tem sequência?",
+"Uma coisa incomum em filmes de animação é a existência de trilogias. Qual dos filmes abaixo não faz parte de uma trilogia?",
+"Apesar de não ser oficialmente uma princesa, ela foi incluída na galeria devido ao seu sucesso entre as crianças. Quem é essa personagem?",
+"Em qual das animações abaixo os animais não falam como pessoas?",
+"Qual foi o primeiro importante personagem da animação à ter sua morte exibida explicitamente ao público infantil?",
+"Em 2004, a Disney disse que lançaria seu último filme em 2D, porém quebrou a promessa ao lançar outro com essa tecnologia em 2009. Qual seria o último filme em 2D, segundo a própria Disney?",
+"Toy Story é considerado o primeiro filme de animação 100% digital do mundo. Porém, outro filme, também feito em sua totalidade com tecnologia digital, foi lançado meses antes, sendo esse último o primeiro 100% digital. Que filme é esse?",
+"Qual filme da DreamWorks tinha como cenário principal uma colônia de formigas?"]
+
+var resposta_correta = Number(0);
+
+var acertou = false;
+
+    
+</script>

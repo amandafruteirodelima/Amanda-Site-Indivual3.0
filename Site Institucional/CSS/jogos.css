@@ -72,7 +72,33 @@ a:hover {
 
 /*FIM DO CABECALHO*/
 
+#jogo_quiz{
+    margin-top: 100px;
+}
 
+
+.titulo {
+    background-color: rgba(87, 183, 247, 0.747);
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    width: 800px;
+    margin-left: 250px;
+
+}
+
+
+#formulario_horas_animacao{
+margin-top: 100px;
+    
+}
+
+
+#jogo_repeticao{
+ margin-top: 100px;
+}
 
 
 

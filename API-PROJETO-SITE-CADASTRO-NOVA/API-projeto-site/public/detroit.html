@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/detroit.css">
+    <title>Detroit Become Human</title>
+    <link rel="icon" type="image/png" href="../IMGS/detroi.png" />
+</head>
+
+<body>
+    <!--INÍCIO DO CABECALHO-->
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+            <nav>
+                <ul>
+
+
+                    <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
+                    <li><a href="totoro.html">TOTORO</a></li>
+                    <li><a href="given.html">GIVEN</a></li>
+                    <li><a href="paranorman.html">PARANORMAN</a></li>
+                    <li><a href="kimetsu.html">SLAYER</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--FIM DO CABECALHO-->
+
+
+
+    <!--INICIO DO CONTEÚDO-->
+
+    <div><img class="logo_img_detroit" src="../IMGS/Detroit-become-human-logo.png" alt=""></div>
+
+    <!--INÍCIO DO VÍDEO-->
+
+    <div class="div_video">
+
+        <video class="video_detroit" muted autoplay loop>
+            <source class="link_video_detroit" src="../../../VIDEOS/detroit.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!--FIM DO VÍDEO-->
+
+
+    <!--INICIO CONTEÚDO-->
+
+    <div class="conteudo">
+
+
+
+        <!--INICIO PARTE DA HISTÓRIA-->
+
+
+        <h2 class="titulos">História</h2>
+
+
+        <div class="div_texto">
+            <span>
+                <p>O jogo se passa no ano de 2038. A tecnologia está em sua evolução máxima! A 3° guerra mundial está
+                    prestes a
+                    eclodir e uma grande onda de desemprego assola a população dos EUA principalmente da cidade de
+                    Detroit.Desemprego este causado pela criação de androids pela maior empresa chamada CyberLife. Além
+                    disso alguns
+                    Androids estão apresentando determinados "defeitos", algo que está preocupando as autoridades.É
+                    neste
+                    contexto
+                    que você controlará os 3 principais personagens do jogo. Connor,Kara e Markus.
+                <p>
+            </span>
+
+
+        </div>
+
+        <!--FIM PARTE DA HISTÓRIA-->
+
+
+        <!--INICIO DA PARTE DOS PERSONAGENS-->
+
+
+        <h2 class="titulos">Personagens</h2>
+
+        <div class="div_but_personagens">
+            <button onclick="aparecer_personagem_1()" class="but_personagens">CONNOR</button>
+            <button onclick="aparecer_personagem_2()" class="but_personagens">KARA</button>
+            <button onclick="aparecer_personagem_3()" class="but_personagens">MARKUS</button>
+            <button onclick="aparecer_personagem_4()" class="but_personagens">HANK</button>
+            <button onclick="aparecer_personagem_5()" class="but_personagens">KAMSKI</button>
+        </div>
+
+        <div id="div_personagens">
+
+
+            <img id="img_personagem" src="" alt="">
+
+
+            <div id="informacoes_personagem"></div>
+
+        </div>
+
+        <!--FIM DA PARTE DOS PERSONAGENS-->
+
+
+        <!--INICIO DA PARTE POR TRÁS DAS CÂMERAS-->
+
+        <h2 class="titulos">Por trás das câmeras</h2>
+
+        <span>
+            <p>
+                No final de 2015, David Cage, fundador da Quantic Dream, revelou que se encontrava a pré-produzir um titulo exclusivo para a PlayStation 4, com base naquilo que já tinha sido feito em títulos anteriores, como Heavy Rain e Beyond: Two Souls, "mas de uma maneira muito, muito diferente".
+                O jogo, anunciado em outubro de 2015 na conferencia de imprensa da Sony durante o Paris Games Week com o titulo Detroit: Become Human foi inspirado numa demonstração tecnológica apresentada na PlayStation 3, a curta-metragem Kara. Apesar de originalmente não ter sido essa a ideia,Cage quis fazer da demonstração um jogo integral porque sentiu curiosidade acerca daquilo que se iria passar depois dos acontecimentos da curta. A equipa de produção escolheu então Detroit como pano de fundo para o jogo, viajando até à cidade em busca de inspiração.
+
+               
+            </p>
+
+            <p>
+                O jogo envolve atores como Jesse Willians, Valorie Curry, Bryan Dechart e Audrey Boustani. Na versão portuguesa (de Portugal), os atores José Mata, Victoria Guerra e Diogo Morgado dobraram as vozes dos protagonistas Connor, Kara e Markus, respetivamente.
+            </p>
+
+            <img class="img_camera" src="../IMGS/bryan_detroit.jpg" alt="">
+
+            <p>
+               O jogo foi captado através da atuação dos atores e após isso aplicados efeitosde CGI tornando possível a representação quase perfeita de cenas de tirar o fôlego. 
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum
+                autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum
+                autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+
+        </span>
+
+        <!--FIM DA PARTE POR TRÁS DAS CÂMERAS-->
+
+    </div>
+    <!--FIM DO CONTEUDO-->
+
+
+
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+
+    function aparecer_personagem_1() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/connor_detroit.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b> Connor<br>
+        <b>Modelo:</b> RK800<br>
+        É um protótipo criado pela CyberLife para investigar os novos casos que estão surgindo de divergentes. Ele se junta ao subtenente Anderson na investigação que mostra que no fundo a divergência não é algo tão simples quanto parece! Durante todo o curso de sua investigação, Connor pode fazer descobertas sobre os casos e tornar-se um agente decisivo na decisão dos próximos eventos.`
+
+
+
+
+    }
+
+    function aparecer_personagem_2() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/kara_detroit.jpg'
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b> Kara<br>
+        <b>Modelo:</b>AX400<br>
+        Kara é uma andróide comum que serve na casa de seu dono, Todd Williams, e que cuida de sua filha Alice.
+        A conexão de Kara com sua jovem carga pode desencadear uma reviravolta que quebra Kara de sua existência repetitiva e a inicia em uma jornada para o mundo, numa época em que os andróides podem se levantar e confrontar seus criadores.`
+
+
+
+    }
+
+    function aparecer_personagem_3() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/markus_detroit.jpg'
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b> Markus<br>
+        <b>Modelo:</b>RK200<br>
+        Markus é um andróide doméstico de propriedade do famoso pintor de Detroit Carl Manfred.
+        Os acontecimentos o arrancam de sua vida familiar e o conduzem à liberdade e à rebelião. Durante o jogo, ele se torna o líder dos desviantes e pode direcioná-los em uma revolta violenta ou pacífica contra a opressão humana e, assim, decidir o futuro de sua espécie. `
+
+
+    }
+
+    function aparecer_personagem_4() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/hank_detroit.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b> Hank Anderson;<br>
+        <b>Cargo:</b> Subtenente<br>
+        Tenente Hank Anderson é um ser humano em Detroit: Become Human. Ele é grisalho, detetive, alcoólatra no Departamento de Polícia da Cidade de Detroit em que trabalha na DPD Central Station e guarda um grande rancor contra andróides. Futuramente, pai de Connor. `
+
+
+
+    }
+
+    function aparecer_personagem_5() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/kamski_detroit.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Elijah Kamski;<br>
+        <b>Cargo:</b>Cientista<br>
+        Elijah Kamski é um humano. Ele é o cientista que inventou os andróides, fundador e ex-CEO da CyberLife.
+        Kamski é um homem muito reservado e desapareceu dos olhos do público depois de renunciar ao cargo de CEO alguns anos antes do início do jogo em 2038.`
+
+
+
+    }
+
+</script>

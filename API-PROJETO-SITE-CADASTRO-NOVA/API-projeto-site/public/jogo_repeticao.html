@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+
+<body>
+
+    <div id="jogo_repeticao">
+
+    <h2>Demonstre seu amor pelo seu personagem preferido!</h2>
+    Qual o nome do seu personagem preferido?
+    <br>
+    <input type="text" id="inpt_ama" placeholder="Personagem preferido:">
+    <br>
+    <br>
+    O quanto você ama esse personagem?
+    <br>
+    <input type="text" id="inpt_quanto" placeholder="Quanto:">
+    <br>
+    <br>
+    <button onclick="expressar()">Expressar amor</button>
+    <br>
+    <br>
+    <div id="mensagem"></div>
+</div>
+</body>
+
+</html>
+
+<script>
+
+    function expressar() {
+
+        contador = 0;
+        var amor = inpt_ama.value;
+        var qntd = Number(inpt_quanto.value);
+        var qntd_inteiro = parseInt(qntd);
+
+
+
+        mensagem.innerHTML = "";
+
+
+        while (contador < qntd) {
+
+            mensagem.innerHTML += `<b>${amor}</b>, eu te amo muito! Você é o melhor personagem de todos!<br>`
+            contador++;
+        }
+
+    }
+</script>

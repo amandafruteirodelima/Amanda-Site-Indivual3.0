@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/paranorman.css">
+    <title>Paranorman</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="../IMGS/zombie_2.png.crdownload" />
+</head>
+
+<body>
+    <!--INÍCIO DO CABECALHO-->
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+            <nav>
+                <ul>
+
+
+                    <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
+                    <li><a href="totoro.html">TOTORO</a></li>
+                    <li><a href="given.html">GIVEN</a></li>
+                    <li><a href="paranorman.html">PARANORMAN</a></li>
+                    <li><a href="kimetsu.html">SLAYER</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--FIM DO CABECALHO-->
+
+
+
+    <!--INICIO DO CONTEÚDO-->
+
+    
+
+    <!--INÍCIO DO VÍDEO-->
+
+    <div class="div_video">
+
+      <img class="img_animacao" src="../IMGS/paranorman_tipos.jpg" alt="">
+    </div>
+
+    <!--FIM DO VÍDEO-->
+
+
+    <!--INICIO CONTEÚDO-->
+
+    <div class="conteudo">
+
+
+
+        <!--INICIO PARTE DA HISTÓRIA-->
+
+
+        <h2 class="titulos">História</h2>
+
+
+        <div class="div_texto">
+            <span>
+                <p>No filme PAranorma o protagonista é Norman Babcock, um garoto isolado e fanático por filmes de terror e coisas relacionadas a zumbis. O motivo pelo qual ele tem esse fascínio é o mesmo pelo qual ele é isolado. É porque ele pode ver os mortos. Assim como o moleque do sexto sentido, ele vê fantasmas o tempo todo, fala com eles e está acostumado com a companhia deles.<p>
+            </span>
+
+
+        </div>
+
+        <!--FIM PARTE DA HISTÓRIA-->
+
+
+        <!--INICIO DA PARTE DOS PERSONAGENS-->
+
+
+        <h2 class="titulos">Personagens</h2>
+
+        <div class="div_but_personagens">
+            <button onclick="aparecer_personagem_1()" class="but_personagens">NORMAN</button>
+            <button onclick="aparecer_personagem_2()" class="but_personagens">AGGIE</button>
+            <button onclick="aparecer_personagem_3()" class="but_personagens">COURTNEY</button>
+            <button onclick="aparecer_personagem_4()" class="but_personagens">NEIL</button>
+            <button onclick="aparecer_personagem_5()" class="but_personagens">MITCH</button>
+        </div>
+
+        <div id="div_personagens">
+
+            
+            <img id="img_personagem" src="" alt="">
+         
+
+         <div id="informacoes_personagem"></div>
+
+     </div>
+
+        <!--FIM DA PARTE DOS PERSONAGENS-->
+
+
+        <!--INICIO DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+        <h2 class="titulos">Por trás das câmeras</h2>
+
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <img class="img_camera" src="https://i.pinimg.com/originals/ca/80/fc/ca80fc35071be07baa906613a1657e1e.jpg" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+
+        </span>
+
+
+        <!--FIM DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+    </div>
+    <!--FIM DO CONTEUDO-->
+
+
+
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+        
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+
+function aparecer_personagem_1() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/norman.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Norman Babcock<br>
+<b>Idade:</b>11 anos<br>
+Norman é um menino de 11 anos que tem a capacidade de ver e falar com os mortos, herdada do lado materno da família, os Prenderghasts. Todo mundo não acredita nele, incluindo seus pais, e algumas pessoas zombam dele. Ele tenta não deixar que isso o incomode, mas depois revela que isso o incomoda muito.`
+
+
+
+
+}
+
+function aparecer_personagem_2() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/Aggie.jpg'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Aggie Prenderghast<br>
+<b>Idade:</b>11 anos<br>
+Agatha Prenderghast, apelidada de Aggie, era uma suposta bruxa cuja maldição assombra Blithe Hollow. Ela é a principal antagonista de ParaNorman. Inicialmente apresentada como uma bruxa malévola e malévola, ela era na verdade apenas uma garotinha inocente. Aggie foi acusada de bruxaria em 1712 e executada por causa de sua habilidade de falar com os mortos. Isso a fez amaldiçoar os sete juízes de sua trilha com raiva.`
+
+
+
+}
+
+function aparecer_personagem_3() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/courtney.png'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Courtney Babcock<br>
+<b>Idade:</b>17 anos<br>
+Courtney Babcock é a irmã mais velha de Norman. Ela é uma líder de torcida e age estereotipadamente esnobe e mesquinha na maior parte do tempo. Courtney se ressente de Norman e quando ele diz que pode ver os mortos, ela sai de seu caminho para provar que ele é um mentiroso.`
+
+
+}
+
+function aparecer_personagem_4() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/neil.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Neil Downe<br>
+<b>Idade:</b>10 anos<br>
+Neil Downe é um estudante do ensino médio ruivo de 10 anos, irmão mais novo de Mitch e amigo de Norman. Ele defendeu Norman quando Norman foi provocado por Alvin, bem como afastou o Sr. Prenderghast quando Neil sente que ele está mexendo com Norman.`
+
+
+
+}
+
+function aparecer_personagem_5() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/mi.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Mitch Downe<br>
+<b>Idade:</b>20 anos<br>
+Mitch Downe é o irmão mais velho de Neil.
+Ele aparentemente está com falta de cérebro, mas compensa em uma quantidade impressionante de músculos e habilidades de direção.Ele é apaixonado por levantamento de peso e as condições de sua van. Ao longo do 300º aniversário do enforcamento da Bruxa, ele atua inicialmente como motorista de Courtney para encontrar Norman, depois como ajudante durante o resto do filme.`
+
+
+
+}
+
+</script>

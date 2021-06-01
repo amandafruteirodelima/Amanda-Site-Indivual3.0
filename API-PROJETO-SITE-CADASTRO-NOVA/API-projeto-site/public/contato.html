@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <title>CONTATO</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="../IMGS/logo_site.png" />
+</head>
+
+<body>
+
+    <!--INÍCIO DO CABECALHO-->
+
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+
+
+            <nav>
+                <ul>
+                    <li class="colorido_lista"><a href="index.html">HOME</a></li>
+                    <li><a href="historia.html">HISTÓRIA</a></li>
+                    <li><a href="tipos.html">TIPOS</a></li>
+                    <li><a href="exemplos.html">EXEMPLOS</a></li>
+                    <li><a style="color: #53c9ed;" href="contato.html">CONTATO</a></li>
+                    <li class="login_cor"><a style="color: white;" href="login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <!--FIM DO CABECALHO-->
+
+
+    <!--INÍCIO DO CONTEÚDO-->
+
+    <div class="caixa_conteudo">
+
+        <div class="conteudo">
+
+            <h1>Possui alguma dúvida ou problema? <br>
+                Entre em contato conosco!</h1>
+            <br>
+            <br>
+
+
+            <div class="inputs">
+                <input id="inpt_nome" class="inpt_padrao" type="text" placeholder="Seu nome:">
+                <br>
+                <br>
+                <input id="inpt_email" class="inpt_padrao" type="text" placeholder="Seu email:" onkeyup="validar()">
+                <br>
+                <div id="mensagem_email"></div>
+                <br>
+                <br>
+                <input id="inpt_assunto" class="inpt_padrao" type="text" placeholder="Assunto:">
+                <br>
+                <br>
+                <input id="inpt_desc" class="inpt_padrao desc" type="text" placeholder="Descrição:">
+
+                <br>
+                <br>
+
+                <button onclick="enviar()" class="but_enviar">Enviar</button>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <!--FIM DO CONTEÚDO-->
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+        
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+
+</body>
+
+</html>
+
+<script>
+
+    email_validado;
+
+    function validar() {
+        var email = inpt_email.value;
+        var arroba = email.indexOf('@');
+        var com = email.indexOf('.com');
+
+        if (arroba >= 0 && com >= 0) {
+            mensagem_email.innerHTML = '<b style = "color: blue;">Email válido!<b>'
+            email_valido = true;
+        }
+
+        else {
+            mensagem_email.innerHTML = '<b style = "color: red;">Email invalido, falta .com e/ou @!</b>';
+            email_validado = false;
+        }
+    }
+
+
+
+
+    function enviar() {
+
+        var nome = inpt_nome.value;
+        var email = inpt_email.value;
+        var assunto = inpt_assunto.value;
+        var desc = inpt_desc.value;
+
+
+        if (nome.length > 0 && email.length > 0 && assunto.length > 0 && desc.length > 0 && email_valido == true) {
+
+            alert('Email enviado com sucesso!')
+            window.location = "";
+
+        }
+
+        else {
+            alert('Preencha todos os campos!');
+        }
+
+
+
+    }
+
+
+
+
+</script>

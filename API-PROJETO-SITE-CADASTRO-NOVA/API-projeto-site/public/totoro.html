@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/totoro.css">
+    <title>Detroit Become Human</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="../IMGS/totoro.png" />
+</head>
+
+<body>
+    <!--INÍCIO DO CABECALHO-->
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+            <nav>
+                <ul>
+
+
+                    <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
+                    <li><a href="totoro.html">TOTORO</a></li>
+                    <li><a href="given.html">GIVEN</a></li>
+                    <li><a href="paranorman.html">PARANORMAN</a></li>
+                    <li><a href="kimetsu.html">SLAYER</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--FIM DO CABECALHO-->
+
+
+
+    <!--INICIO DO CONTEÚDO-->
+
+    
+
+    <!--INÍCIO DO VÍDEO-->
+
+    <div class="div_video">
+
+      <img class="img_animacao" src="../IMGS/totoro_fundo.jpg" alt="">
+    </div>
+
+    <!--FIM DO VÍDEO-->
+
+
+    <!--INICIO CONTEÚDO-->
+
+    <div class="conteudo">
+
+
+
+        <!--INICIO PARTE DA HISTÓRIA-->
+
+
+        <h2 class="titulos">História</h2>
+
+
+        <div class="div_texto">
+            <span>
+                <p>Meu Amigo Totoro é um filme animado de fantasia escrito e dirigido por Hayao Miyazaki e produzido pelo Studio Ghibli em 1988. O filme conta a historia das duas jovens filhas (Satsuki e Mei) de um professor e suas aventuras com espíritos da floresta amigáveis no Japão pós-guerra rural.<p>
+                    <p>Duas meninas se mudam com o pai para o interior do Japão, com o objetivo de ficar perto da mãe, que está internada em um hospital. Lá, elas viverão muitas aventuras ao lado de um simpático espírito protetor da floresta chamado Totoro, que vive em uma canforeira gigante.</p>
+            </span>
+
+
+        </div>
+
+        <!--FIM PARTE DA HISTÓRIA-->
+
+
+        <!--INICIO DA PARTE DOS PERSONAGENS-->
+
+
+        <h2 class="titulos">Personagens</h2>
+
+        <div class="div_but_personagens">
+            <button onclick="aparecer_personagem_1()" class="but_personagens">TOTORO</button>
+            <button onclick="aparecer_personagem_2()" class="but_personagens">MEI</button>
+            <button onclick="aparecer_personagem_3()" class="but_personagens">SATSUKI</button>
+            <button onclick="aparecer_personagem_4()" class="but_personagens">CATBUS</button>
+            <button onclick="aparecer_personagem_5()" class="but_personagens">KANTA</button>
+        </div>
+
+        <div id="div_personagens">
+
+            
+            <img id="img_personagem" src="" alt="">
+         
+
+         <div id="informacoes_personagem"></div>
+
+     </div>
+
+        <!--FIM DA PARTE DOS PERSONAGENS-->
+
+
+        <!--INICIO DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+        <h2 class="titulos">Por trás das câmeras</h2>
+
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <img class="img_camera" src="https://i.pinimg.com/originals/ca/80/fc/ca80fc35071be07baa906613a1657e1e.jpg" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+
+        </span>
+
+
+        <!--FIM DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+    </div>
+    <!--FIM DO CONTEUDO-->
+
+
+
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+        
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+
+function aparecer_personagem_1() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/totoro_4.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Totoro<br>
+<b>Espécie:</b>Espírito<br>
+Totoro é um espírito da floresta e possui uma aparência bem peculiar. Ele é grande e peludo, possuindo pelos marrom-escuros, que ficam meio acinzentados. A pelugem da barriga dele é branca e tem algumas marcas marrons; as garras da criatura são extremamente grandes e afiadas, chamando bastante atenção por conta de seus pés serem praticamente unidos ao corpo arredondado dele; bem como suas orelhas são pontudas e tzêm o formato de dois pequenos pinheiros.`
+
+
+
+
+}
+
+function aparecer_personagem_2() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/mei.webp'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Mei Kusakabe<br>
+<b>Espécie:</b>Humana<br>
+Mei Kusakabe é a irmã mais nova protagonista de Satsuki, de quatro anos. Ela é filha de Tatsuo e Yasuko Kusakabe.Mei é a irmã mais nova de Satsuki.Mei é uma criança obstinada e perseverante. Teimosa, mas alegre, ela é como a irmã mais velha no sentido de que é persistente e não tímida. Mas com sua timidez inicial e tendência a poucas palavras, ela parece ser ainda mais observadora do que Satsuki.`
+
+
+
+}
+
+function aparecer_personagem_3() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/satsuki.jpg'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Satsuki Kusakabe<br>
+<b>Espécie:</b>Humana<br>
+Satsuki é a irmã mais velha de Mei.Satsuki gosta de se considerar adulta e carinhosa com sua irmã. Ela é muito animada, embora não tão animada quanto Mei. Satsuki é uma boa irmã no geral e cuida de Mei com o melhor de sua capacidade, apesar de estar chateada com sua mãe doente. Ela também é muito gentil e responsável em geral.`
+
+
+}
+
+function aparecer_personagem_4() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/catbus.jpg';
+informacoes_personagem.innerHTML = `<br><br><br><b>Nome:</b>Catbus<br>
+<b>Espécie:</b>Espírito<br>
+O Catbus é um animal transportador com aparência de ônibus. Ele é recebido por Mei, Satsuki e Totoro. (embora Totoro deva conhecê-lo há anos, pois já sabe como levá-lo para voltar para sua casa debaixo da árvore de acampamento).`
+
+
+
+}
+
+function aparecer_personagem_5() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/ka.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Kanta Ōgaki<br>
+<b>Espécie:</b>Humana<br>
+Kanta aparece pela primeira vez quando a família Kusakabe está indo para sua nova casa. Ele foge muito rapidamente ao ver Mei e Satsuki. Kanta então traz uma cesta para a vovó que está ajudando a mudança do Kusakabe, onde ele encontra Satsuki apropriadamente e a entrega com força a cesta e foge, comentando com Satsuki que a casa dela está assombrada, mas a vovó o pega. Kanta então faz uma careta para Satsuki quando ela, Mei e o Sr. Kusakabe passam de bicicleta.`
+
+
+
+}
+
+</script>

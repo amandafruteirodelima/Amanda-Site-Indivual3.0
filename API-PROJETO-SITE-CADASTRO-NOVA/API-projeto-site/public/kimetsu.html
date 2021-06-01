@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/kimetsu.css">
+    <title>Kimetsu no Yaiba</title>
+    <link rel="icon" 
+    type="image/png" 
+    href="../IMGS/tanjiro.png" />
+</head>
+
+<body>
+    <!--INÍCIO DO CABECALHO-->
+    <div class="cabecalho">
+        <div class="caixa_cabecalho">
+
+            <nav>
+                <ul>
+
+
+                    <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
+                    <li><a href="totoro.html">TOTORO</a></li>
+                    <li><a href="given.html">GIVEN</a></li>
+                    <li><a href="paranorman.html">PARANORMAN</a></li>
+                    <li><a href="kimetsu.html">SLAYER</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--FIM DO CABECALHO-->
+
+
+
+    <!--INICIO DO CONTEÚDO-->
+
+    
+
+    <!--INÍCIO DO VÍDEO-->
+
+    <div class="div_video">
+
+      <img class="img_animacao" src="https://www.xtrafondos.com/en/descargar.php?id=3728&resolucion=3840x2160" alt="">
+    </div>
+
+    <!--FIM DO VÍDEO-->
+
+
+    <!--INICIO CONTEÚDO-->
+
+    <div class="conteudo">
+
+
+
+        <!--INICIO PARTE DA HISTÓRIA-->
+
+
+        <h2 class="titulos">História</h2>
+
+
+        <div class="div_texto">
+            <span>
+                <p>A mortal batalha entre demônios e humanos é o foco de Kimetsu no Yaiba, ou Demon Slayer, que já conquistou multidões de fãs. Jovens que se dedicam a caçar demônios passam por pesados treinos e desenvolvem diferentes poderes que podem ser vistos em cenas de tirar o fôlego do espectador.<p>
+            </span>
+
+
+        </div>
+
+        <!--FIM PARTE DA HISTÓRIA-->
+
+
+        <!--INICIO DA PARTE DOS PERSONAGENS-->
+
+
+        <h2 class="titulos">Personagens</h2>
+
+        <div class="div_but_personagens">
+            <button onclick="aparecer_personagem_1()" class="but_personagens">TANJIRO</button>
+            <button onclick="aparecer_personagem_2()" class="but_personagens">NEZUKO</button>
+            <button onclick="aparecer_personagem_3()" class="but_personagens">ZENITSU</button>
+            <button onclick="aparecer_personagem_4()" class="but_personagens">INOSUKE</button>
+            <button onclick="aparecer_personagem_5()" class="but_personagens">GIYU</button>
+        </div>
+
+        <div id="div_personagens">
+
+            
+            <img id="img_personagem" src="" alt="">
+         
+
+         <div id="informacoes_personagem"></div>
+
+     </div>
+
+        <!--FIM DA PARTE DOS PERSONAGENS-->
+
+
+        <!--INICIO DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+        <h2 class="titulos">Por trás das câmeras</h2>
+
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <img class="img_camera" src="https://i.pinimg.com/originals/ca/80/fc/ca80fc35071be07baa906613a1657e1e.jpg" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+            </p>
+
+
+        </span>
+
+
+        <!--FIM DA PARTE POR TRÁS DAS CÂMERAS-->
+
+
+    </div>
+    <!--FIM DO CONTEUDO-->
+
+
+
+
+
+    <!--INÍCIO DO RODAPÉ-->
+    <div class="rodape">
+        &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+        
+    </div>
+    <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+
+function aparecer_personagem_1() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/tanjiro_3.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Tanjirō Kamado<br>
+<b>Categoria:</b>Caçador de demônio<br>
+<b>Idade:</b> 15 anos<br>
+Extremamente leal e com uma capacidade de liderança nata, Tanjirō também demonstra uma grande empatia pelo sofrimento de todos, até mesmo de demônios. Durante sua trajetória e suas missões, acaba se unindo aos também jovens caçadores Zenitsu Agatsuma e Inosuke Hashibira. Ele conta com a ajuda deles para proteger Nezuko daqueles que não concordam com a atitude de Tanjirō de proteger um demônio.`
+
+
+
+
+}
+
+function aparecer_personagem_2() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/nezuko.jpg'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Nezuko Kamado<br>
+<b>Categoria:</b>Demônio<br>
+<b>Idade:</b>14 anos<br>
+A vila em que Nezuko morava com sua família foi massacrada pelo Rei dos Demônios, Muzan Kibutsuji. Perdendo toda a sua família, apenas Nezuko e seu ião tanjiro sobreviveram. Contudo, a menina foi transformada em um demônio. Misteriosamente, Nezuko consegue manter sua consciência humana e não é afetada pelo luz do Sol, embora tenha ganho habilidades e alguns extintos demoníacos.`
+
+
+
+}
+
+function aparecer_personagem_3() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/zenitsu.png'
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Zenitsu Agatsuma<br>
+<b>Categoria:</b>Caçador de demônio<br>
+<b>Idade:</b>16 anos<br>
+Zenitsu entrou para a Demon Slayer Corps no mesmo período que Tanjirō, mas este nunca foi o sonho de vida desse jovem medroso mulherengo. Na verdade, o gosto por mulheres e sua falta de juízo para lidar com isso levaram Zenitsu a se endividar com uma mulher, que acabou vendendo o jovem para um treinador.`
+
+
+}
+
+function aparecer_personagem_4() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/inosuke.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Inosuke Hashibira<br>
+<b>Categoria:</b>Caçador de demônio<br>
+<b>Idade:</b>15 anos<br>
+A primeira vez que veem Inosuke no anime, Tanjirō e Zenitsu se assustam com o rapaz que usa uma cabeça de Javali para escondendo seu rosto. Contudo, já neste primeiro momento, Inosuke se mostra um habilidoso guerreiro e caçador. Mais tarde, seus novos amigos descobrem que, por baixo da cabeça de javali, o jovem esconde um rosto com traços afeminados, que nada combina com seu corpo musculoso.`
+
+
+
+}
+
+function aparecer_personagem_5() {
+
+div_personagens.style.display = 'block';
+img_personagem.src = '../IMGS/giyu_3.jpg';
+informacoes_personagem.innerHTML = `<br><b>Nome:</b>Giyu Tomioka<br>
+<b>Categoria:</b>Pilar da Água<br>
+<b>Idade:</b>21 anos<br>
+Giyu é um dos pupilos de Sakonji e seu sucessor como Pilar da Água na Demon Slayer Corps.O jovem é conhecido por sua personalidade série e reservada, mas também por seu senso de justiça e pela disposição para ajudar quem precisa.Embora tenha o mesmo desprezo por demônios que os demais Pilares e caçadores, ele é compreensivo com a situação de Tanjirō e Nezuko, defendendo os irmãos Kamado.`
+
+
+
+}
+
+</script>

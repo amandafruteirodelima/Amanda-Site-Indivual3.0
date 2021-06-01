@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login e Cadastro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../IMGS/logo_site.png" />
+
+</head>
+
+<body>
+
+
+
+  <div class="cabecalho">
+    <div class="caixa_cabecalho">
+
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="historia.html">HISTÓRIA</a></li>
+          <li><a href="tipos.html">TIPOS</a></li>
+          <li><a href="exemplos.html">EXEMPLOS</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+          <li id="login_cor" class="colorido_lista"><a style="color: white;" href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+
+
+  <div class="conteudo">
+    <!--INÍCIO DO CONTEÚDO DO LOGIN-->
+
+    <form id="form_login" method="post" onsubmit="return entrar()">
+    <div class="form login">
+
+      <h2>Login</h2>
+
+      <label>
+        <span>Endereço de Email</span>
+        <input type="email" name="login">
+      </label>
+
+      <label>
+        <span>Senha</span>
+        <input type="password" name="senha">
+      </label>
+
+      <button class="but_logar_cadastrar">Logar</button>
+        </form>
+
+      <p class="esqueceu_senha">Esqueceu a senha?</p>
+
+      <div class="redes_sociais">
+        <ul>
+          <li><img class="but_redes_sociais" src="../IMGS/facebook.png"></li>
+          <li><img class="but_redes_sociais" src="../IMGS/twitter.png"></li>
+          <li><img class="but_redes_sociais" src="../IMGS/linkedin.png"></li>
+          <li><img class="but_redes_sociais" src="../IMGS/instagram.png"></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--FIM DO CONTEÚDO DO LOGIN-->
+
+
+    <!--INICIO DO CONTEÚDO CAIXA QUE SE MEXE-->
+
+    <div class="sub-conteudo">
+
+      <div class="img">
+
+        <div class="img-texto m-cadastro">
+          <h2>Novo por aqui?</h2>
+          <p>Cadastre-se para ter acesso aos nossos conteúdos exclusivos!</p>
+        </div>
+        <div class="img-texto m-login">
+          <h2>Já é um de nós?</h2>
+          <p>Se você já tem uma conta, logue-se.<br> Nós sentimos a sua falta!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-cadastro">Cadastrar-se</span>
+          <span class="m-login">Logar-se</span>
+        </div>
+
+      </div>
+
+
+      <!--FIM DO CONTEÚDO CAIXA QUE SE MEXE-->
+
+
+      <!--INICIO DO CONTEÚDO CADASTRO-->
+
+      <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+      <div class="form cadastro">
+        <h2>Cadastrar-se</h2>
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="login">
+        </label>
+        <label>
+          <span>Senha</span>
+          <input type="password" name="senha">
+        </label>
+        <label>
+          <span>Animação Preferida</span>
+          <select class="combo_sel" name="animacao" id="sel_animacao">
+            <option value="">-- Selecione uma animação --</option>
+            <option value="100">Detroit Become Human</option>
+            <option value="101">Meu Amigo Totoro</option>
+            <option value="102">Given</option>
+            <option value="103">Kimesu no Yaiba</option>
+            <option value="104">Paranorman</option>
+          </select>
+        </label>
+        <label>
+          <span>Personagem Preferido</span>
+          <select class="combo_sel" name="personagem" id="sel_personagem">
+            <option value="">-- Selecione um personagem --</option>
+
+            <option value="200">Connor-DBH</option>
+            <option value="201">Kara-DBH</option>
+            <option value="202">Markus-DBH</option>
+            <option value="203">Hank-DBH</option>
+            <option value="204">Kamski-DBH</option>
+            <option value="205">Totoro</option>
+            <option value="206">Mei-MAT</option>
+            <option value="207">Satsuki-MAT</option>
+            <option value="208">Catbus-MAT</option>
+            <option value="209">Kanta-MAT</option>
+            <option value="210">Mafuyu-Given</option>
+            <option value="211">Uenoyama-Given</option>
+            <option value="212">Haruki-Given</option>
+            <option value="213">Akihiko-Given</option>
+            <option value="214">Ugetsu-Given</option>
+            <option value="215">Tanjiro-KNY</option>
+            <option value="216">Nezuko-KNY</option>
+            <option value="217">Zenitsu-KNY</option>
+            <option value="218">Inosuke-KNY</option>
+            <option value="219">Giyu-KNY</option>
+            <option value="220">Norman-Paranorman</option>
+            <option value="221">Neil-Paranorman</option>
+            <option value="222">Aggie-Paranorman</option>
+            <option value="223">Courtney-Paranorman</option>
+            <option value="224">Mitch-Paranorman</option>
+
+          </select>
+        </label>
+        <button class="but_logar_cadastrar">Cadastrar-se</button>
+     
+      </div>
+    </form>
+    </div>
+  </div>
+
+  <!--FIM DO CONTEÚDO CADASTRO-->
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <!--INÍCIO DO RODAPÉ-->
+  <div class="rodape">
+    &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
+
+  </div>
+  <!--FIM DO RODAPÉ-->
+
+</body>
+
+</html>
+
+<script>
+
+function cadastrar() {
+
+var formulario = new URLSearchParams(new FormData(form_cadastro));
+fetch("/usuarios/cadastrar", {
+  method: "POST",
+  body: formulario
+}).then(function (response) {
+
+  if (response.ok) {
+
+    window.location.href = 'login.html';
+
+  } else {
+
+    console.log('Erro de cadastro!');
+    response.text().then(function (resposta) {
+
+    });
+
+  }
+});
+
+return false;
+}
+
+function entrar() {
+
+var formulario = new URLSearchParams(new FormData(form_login));
+fetch("/usuarios/autenticar", {
+  method: "POST",
+  body: formulario
+}).then(resposta => {
+
+  if (resposta.ok) {
+
+    resposta.json().then(json => {
+
+      sessionStorage.login_usuario_meuapp = json.login;
+      sessionStorage.nome_usuario_meuapp = json.nome;
+
+      window.location.href = 'detroit.html';
+    });
+
+  } else {
+
+    console.log('Erro de login!');
+
+    resposta.text().then(texto => {
+      console.error(texto);
+
+    });
+  }
+});
+
+return false;
+}
+
+</script>

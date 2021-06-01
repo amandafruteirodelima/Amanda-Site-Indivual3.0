@@ -1,0 +1,172 @@
+/*INICIO DO GERAL*/
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #0d0d0d;
+    background-image: url('../IMGS/contato_fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/*INICIO DO CABECALHO*/
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background-color: #0d0d0dc2;
+    border-bottom: 4px solid #53c9ed;
+    position: relative;
+
+}
+
+.caixa_cabecalho {
+
+    max-width: 95%;
+
+}
+
+.cabecalho nav {
+    float: right;
+
+
+}
+
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.colorido_lista {
+    color: #53c9ed
+}
+
+.cabecalho a:hover {
+
+    font-size: 1.25em;
+    transition: 0.5s;
+    color: #53c9ed
+}
+
+.cabecalho ul {
+    padding-top: 30px;
+    list-style: none;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cabecalho ul li {
+    display: inline;
+    font-size: 1.3em;
+    margin-right: 40px;
+
+}
+
+
+.login_cor {
+    padding: 6px;
+    background-color: #0396a6;
+    border-radius: 40px;
+    color: white;
+}
+
+/*FIM DO CABECALHO*/
+
+
+
+
+/*INICIO DO CONTEUDO*/
+
+
+.caixa_conteudo {
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    border-radius: 25px;
+    border: 4px solid #0396a6;
+
+}
+
+.conteudo h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.inpt_padrao {
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+    width: 300px;
+    border: 1.5px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.inputs {
+
+    text-align: center;
+}
+
+.but_enviar {
+    display: block;
+    border: 0px;
+    margin: 25px auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    background: -webkit-linear-gradient(left, #0396a6, #b224ef);
+}
+
+.but_enviar:hover {
+    background: -webkit-linear-gradient(left, #b224ef, #0396a6);
+}
+
+#mensagem_email {
+    margin-top: 3px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+
+}
+
+/*FIM DO CONTEUDO*/
+
+
+
+/*INICIO DO RODAPÉ*/
+
+.rodape {
+    background-color: #0396a6;
+    text-align: center;
+    color: white;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -200px;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+
+/*FIM DO RODAPÉ*/
