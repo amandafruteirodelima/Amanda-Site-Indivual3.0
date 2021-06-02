@@ -13,8 +13,8 @@ body {
     background-image: url("../IMGS/fundo_tipos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  
-   
+
+
 }
 
 
@@ -31,7 +31,7 @@ body {
     border-bottom: 4px solid #03a678;
     position: relative;
 
-    
+
 }
 
 .caixa_cabecalho {
@@ -44,7 +44,7 @@ body {
 
 .cabecalho nav {
     float: right;
-    
+
 }
 
 
@@ -57,16 +57,17 @@ body {
 .colorido_lista {
     color: #03a678;
 }
+
 .cabecalho a:hover {
 
     font-size: 1.25em;
     transition: 0.5s;
     color: #03a678;
-  
+
 }
 
 .cabecalho ul {
-    padding-top: 30px; 
+    padding-top: 30px;
     list-style: none;
     color: white;
     margin: 0;
@@ -81,8 +82,8 @@ body {
 }
 
 
-.login_cor{
-    padding:6px;
+.login_cor {
+    padding: 6px;
     background-color: #0396a6;
     border-radius: 40px;
     color: white;
@@ -92,19 +93,19 @@ body {
 
 /*INICIO DO CONTEÚDO*/
 
-.div_titulo{
-position: absolute;
-left: 10%;
-top: 25%;
-width: 80%;
-text-align: center;
+.div_titulo {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    text-align: center;
 }
 
-.titulo{
-color: white;
-font-size: 100px;
-background-color: rgba(22, 22, 22, 0.37);
-border-radius: 30px;
+.titulo {
+    color: white;
+    font-size: 100px;
+    background-color: rgba(22, 22, 22, 0.37);
+    border-radius: 30px;
 }
 
 .titulo:hover {
@@ -112,17 +113,17 @@ border-radius: 30px;
     transition: 0.5s;
 }
 
-.div_conteudo_tipos{
-position: absolute;
-top: 115%;
-width: 70%;
-left: 15%;
+.div_conteudo_tipos {
+    position: absolute;
+    top: 115%;
+    width: 70%;
+    left: 15%;
 }
 
 
-.div_conteudo_tipos h2{
+.div_conteudo_tipos h2 {
     color: white;
-    background-color: #03a678 ;
+    background-color: #03a678;
     position: relative;
     text-align: center;
     letter-spacing: 1.3px;
@@ -132,26 +133,26 @@ left: 15%;
 }
 
 
-.div_conteudo_tipos p{
+.div_conteudo_tipos p {
     color: white;
     position: relative;
-    text-align: justify; 
+    text-align: justify;
     font-size: 18px;
     letter-spacing: 1.3px;
-    text-indent:50px;
+    text-indent: 50px;
 }
 
-.div_conteudo_tipos h3{
+.div_conteudo_tipos h3 {
     color: #03a678;
     position: relative;
-    text-align: center; 
+    text-align: center;
     letter-spacing: 1.3px;
     font-size: 30px;
 
 
 }
 
-.img{
+.img {
     width: 500px;
     text-align: center;
     padding-left: 23%;
@@ -173,12 +174,11 @@ left: 15%;
     left: 0px;
     bottom: -8120px;
     padding-top: 20px;
-    
-    
+
+
 
 }
 
 
 
 /*FIM DO RODAPÉ*/
-

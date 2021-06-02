@@ -10,7 +10,7 @@ body {
     height: 100%;
     margin: 0;
     background-color: #242424d2;
-   
+
 }
 
 /*FIM DO GERAL*/
@@ -35,7 +35,7 @@ body {
 
 .cabecalho nav {
     float: right;
-    
+
 }
 
 
@@ -48,16 +48,17 @@ body {
 .colorido_lista {
     color: #f29f05;
 }
+
 .cabecalho a:hover {
 
     font-size: 1.25em;
     transition: 0.5s;
     color: #f29f05;
-  
+
 }
 
 .cabecalho ul {
-    padding-top: 30px; 
+    padding-top: 30px;
     list-style: none;
     color: white;
     margin: 0;
@@ -72,12 +73,13 @@ body {
 }
 
 
-.login_cor{
-    padding:6px;
+.login_cor {
+    padding: 6px;
     background-color: #0396a6;
     border-radius: 40px;
     color: white;
 }
+
 /*FIM DO CABECALHO*/
 
 
@@ -91,7 +93,7 @@ body {
     text-align: center;
     padding: 0px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.548);
-    position:relative;
+    position: relative;
     top: -10;
 }
 
@@ -117,7 +119,7 @@ body {
     text-align: center;
     left: 12%;
     top: 25%;
-   
+
 }
 
 /*FIM DO TÍTULO*/
@@ -125,35 +127,35 @@ body {
 /*DIV CONTEÚDO*/
 
 
-.div_conteudo{
+.div_conteudo {
     max-width: 70%;
     text-align: justify;
     margin: 0px;
     padding-left: 200px;
     color: white;
-   
+
 }
 
-.div_conteudo h2{
-    
+.div_conteudo h2 {
+
     text-align: center;
-    
-   
-  
+
+
+
 }
 
-.div_conteudo p{
-    
+.div_conteudo p {
+
     color: white;
     font-size: 18px;
     letter-spacing: 1.3px;
-    text-indent:50px;
-	text-align:justify;
-   
-  
+    text-indent: 50px;
+    text-align: justify;
+
+
 }
 
-.img{
+.img {
     text-align: center;
     padding-left: 250px;
     width: 200px;
@@ -162,40 +164,41 @@ body {
     padding-top: 20px;
 }
 
-.img_2{
+.img_2 {
     text-align: center;
     padding-left: 200px;
-    
+
 }
 
-.img_3{
+.img_3 {
     text-align: center;
     padding-left: 200px;
     width: 600px;
 }
 
-.img_4{
+.img_4 {
     text-align: center;
     padding-left: 230px;
     width: 500px;
 }
 
-.img_5{
+.img_5 {
     padding-top: 20px;
 }
 
-.img_8{
+.img_8 {
     text-align: center;
     padding-left: 220px;
     width: 500px;
 }
 
-.titulo{
+.titulo {
     background-color: rgba(255, 255, 255, 0.253);
     height: 40px;
     padding-top: 18px;
-    
+
 }
+
 /*DIV CONTEÚDO*/
 
 
@@ -206,7 +209,7 @@ body {
 /*INICIO DO RODAPÉ*/
 
 .rodape {
-    background-color:#f29f05;
+    background-color: #f29f05;
     text-align: center;
     color: white;
     height: 40px;
@@ -222,5 +225,3 @@ body {
 
 
 /*FIM DO RODAPÉ*/
-
-

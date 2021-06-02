@@ -39,81 +39,81 @@
     <!--INÍCIO DO CONTEÚDO DO LOGIN-->
 
     <form id="form_login" method="post" onsubmit="return entrar()">
-    <div class="form login">
+      <div class="form login">
 
-      <h2>Login</h2>
+        <h2>Login</h2>
 
-      <label>
-        <span>Endereço de Email</span>
-        <input type="email" name="login">
-      </label>
+        <label>
+          <span>Endereço de Email</span>
+          <input id="inpt_email" type="email" name="login">
+        </label>
 
-      <label>
-        <span>Senha</span>
-        <input type="password" name="senha">
-      </label>
+        <label>
+          <span>Senha</span>
+          <input id="inpt_senha" type="password" name="senha">
+        </label>
 
-      <button class="but_logar_cadastrar">Logar</button>
-        </form>
+        <button class="but_logar_cadastrar">Logar</button>
+    </form>
 
-      <p class="esqueceu_senha">Esqueceu a senha?</p>
+    <p class="esqueceu_senha">Esqueceu a senha?</p>
 
-      <div class="redes_sociais">
-        <ul>
-          <li><img class="but_redes_sociais" src="../IMGS/facebook.png"></li>
-          <li><img class="but_redes_sociais" src="../IMGS/twitter.png"></li>
-          <li><img class="but_redes_sociais" src="../IMGS/linkedin.png"></li>
-          <li><img class="but_redes_sociais" src="../IMGS/instagram.png"></li>
-        </ul>
+    <div class="redes_sociais">
+      <ul>
+        <li><img class="but_redes_sociais" src="../IMGS/facebook.png"></li>
+        <li><img class="but_redes_sociais" src="../IMGS/twitter.png"></li>
+        <li><img class="but_redes_sociais" src="../IMGS/linkedin.png"></li>
+        <li><img class="but_redes_sociais" src="../IMGS/instagram.png"></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!--FIM DO CONTEÚDO DO LOGIN-->
+
+
+  <!--INICIO DO CONTEÚDO CAIXA QUE SE MEXE-->
+
+  <div class="sub-conteudo">
+
+    <div class="img">
+
+      <div class="img-texto m-cadastro">
+        <h2>Novo por aqui?</h2>
+        <p>Cadastre-se para ter acesso aos nossos conteúdos exclusivos!</p>
+      </div>
+      <div class="img-texto m-login">
+        <h2>Já é um de nós?</h2>
+        <p>Se você já tem uma conta, logue-se.<br> Nós sentimos a sua falta!</p>
+      </div>
+      <div class="img-btn">
+        <span class="m-cadastro">Cadastrar-se</span>
+        <span class="m-login">Logar-se</span>
       </div>
 
     </div>
 
-    <!--FIM DO CONTEÚDO DO LOGIN-->
+
+    <!--FIM DO CONTEÚDO CAIXA QUE SE MEXE-->
 
 
-    <!--INICIO DO CONTEÚDO CAIXA QUE SE MEXE-->
+    <!--INICIO DO CONTEÚDO CADASTRO-->
 
-    <div class="sub-conteudo">
-
-      <div class="img">
-
-        <div class="img-texto m-cadastro">
-          <h2>Novo por aqui?</h2>
-          <p>Cadastre-se para ter acesso aos nossos conteúdos exclusivos!</p>
-        </div>
-        <div class="img-texto m-login">
-          <h2>Já é um de nós?</h2>
-          <p>Se você já tem uma conta, logue-se.<br> Nós sentimos a sua falta!</p>
-        </div>
-        <div class="img-btn">
-          <span class="m-cadastro">Cadastrar-se</span>
-          <span class="m-login">Logar-se</span>
-        </div>
-
-      </div>
-
-
-      <!--FIM DO CONTEÚDO CAIXA QUE SE MEXE-->
-
-
-      <!--INICIO DO CONTEÚDO CADASTRO-->
-
-      <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
       <div class="form cadastro">
         <h2>Cadastrar-se</h2>
         <label>
           <span>Nome</span>
-          <input type="text" name="nome">
+          <input id="inpt_nome" type="text" name="nome">
         </label>
         <label>
           <span>Email</span>
-          <input type="email" name="login">
+          <input id="inpt_email" type="email" name="login">
         </label>
         <label>
           <span>Senha</span>
-          <input type="password" name="senha">
+          <input id="inpt_senha" type="password" name="senha">
         </label>
         <label>
           <span>Animação Preferida</span>
@@ -160,10 +160,10 @@
           </select>
         </label>
         <button class="but_logar_cadastrar">Cadastrar-se</button>
-     
+
       </div>
     </form>
-    </div>
+  </div>
   </div>
 
   <!--FIM DO CONTEÚDO CADASTRO-->
@@ -183,61 +183,92 @@
 
 <script>
 
-function cadastrar() {
+  function cadastrar() {
 
-var formulario = new URLSearchParams(new FormData(form_cadastro));
-fetch("/usuarios/cadastrar", {
-  method: "POST",
-  body: formulario
-}).then(function (response) {
+    var nome = inpt_nome.value;
+    var email = inpt_email.value;
+    var senha = inpt_senha.value;
+    var animacao = sel_animacao.value;
+    var personagem = sel_personagem.value;
 
-  if (response.ok) {
 
-    window.location.href = 'login.html';
 
-  } else {
 
-    console.log('Erro de cadastro!');
-    response.text().then(function (resposta) {
 
+    var formulario = new URLSearchParams(new FormData(form_cadastro));
+    fetch("/usuarios/cadastrar", {
+      method: "POST",
+      body: formulario
+    }).then(function (response) {
+
+      if (nome == "" || email == "" || senha == "" || animacao == "" || personagem == "") {
+        alert('Cadastro inválido!')
+      }
+
+      else {
+
+        if (response.ok) {
+
+          alert('Cadastro realizado com sucesso!')
+          window.location.href = 'login.html';
+
+        } else {
+          alert('Cadastro inválido tente novamente!')
+          console.log('Erro de cadastro!');
+          response.text().then(function (resposta) {
+
+          });
+
+        }
+
+      }
     });
+
+    return false;
 
   }
-});
 
-return false;
-}
 
-function entrar() {
+  function entrar() {
 
-var formulario = new URLSearchParams(new FormData(form_login));
-fetch("/usuarios/autenticar", {
-  method: "POST",
-  body: formulario
-}).then(resposta => {
+    var email = inpt_email.value;
+    var senha = inpt_senha.value;
 
-  if (resposta.ok) {
 
-    resposta.json().then(json => {
 
-      sessionStorage.login_usuario_meuapp = json.login;
-      sessionStorage.nome_usuario_meuapp = json.nome;
 
-      window.location.href = 'detroit.html';
+    var formulario = new URLSearchParams(new FormData(form_login));
+    fetch("/usuarios/autenticar", {
+      method: "POST",
+      body: formulario
+    }).then(resposta => {
+
+      if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+          sessionStorage.login_usuario_meuapp = json.login;
+          sessionStorage.nome_usuario_meuapp = json.nome;
+
+          alert('Login realizado com sucesso!');
+
+          window.location.href = 'detroit.html';
+        });
+
+      } else {
+
+        console.log('Erro de login!');
+        alert('Login inválido tente novamente!');
+
+        resposta.text().then(texto => {
+          console.error(texto);
+
+        });
+      }
     });
 
-  } else {
 
-    console.log('Erro de login!');
-
-    resposta.text().then(texto => {
-      console.error(texto);
-
-    });
+    return false;
   }
-});
-
-return false;
-}
 
 </script>
