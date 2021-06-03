@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/detroit.css">
     <title>Detroit Become Human</title>
     <link rel="icon" type="image/png" href="../IMGS/detroi.png" />
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
@@ -18,14 +19,16 @@
             <nav>
                 <ul>
 
-
+                    <li>
+                        <h3 id="usuario_nome" style="display: none;">Olá, <b id="b_usuario"></b></h3>
+                    </li>
                     <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
                     <li><a href="totoro.html">TOTORO</a></li>
                     <li><a href="given.html">GIVEN</a></li>
                     <li><a href="paranorman.html">PARANORMAN</a></li>
                     <li><a href="kimetsu.html">SLAYER</a></li>
                     <li><a href="jogos.html">JOGOS</a></li>
-                    <li><a href="../HTML/index.html">RETORNAR</a></li>
+                    <li><a href="index.html">RETORNAR</a></li>
 
                 </ul>
             </nav>
@@ -173,6 +176,9 @@
 </html>
 
 <script>
+
+    let usuario;
+    verificar_autenticacao();
 
     function aparecer_personagem_1() {
 

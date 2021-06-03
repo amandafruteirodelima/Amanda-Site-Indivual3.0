@@ -12,6 +12,7 @@
     <script type="text/javascript" src="../JS/jogo_quiz.js"></script>
     <script type="text/javascript" src="../JS/jogo_amor.js"></script>
     <script type="text/javascript" src="../JS/jogo_vicio_animacao.js"></script>
+    <script src="funcoes.js"></script>
 
 </head>
 
@@ -23,7 +24,9 @@
             <nav>
                 <ul>
 
-
+                    <li>
+                        <h3 id="usuario_nome" style="display: none;">Olá, <b id="b_usuario"></b></h3>
+                    </li>
                     <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
                     <li><a href="totoro.html">TOTORO</a></li>
                     <li><a href="given.html">GIVEN</a></li>
@@ -314,6 +317,9 @@
 </html>
 
 <script>
+
+    let usuario;
+    verificar_autenticacao();
 
     var perguntas = ["Qual o nome da primeira animação existente no mundo?",
         "Qual dos desenhos abaixo não é um filme da Disney?",

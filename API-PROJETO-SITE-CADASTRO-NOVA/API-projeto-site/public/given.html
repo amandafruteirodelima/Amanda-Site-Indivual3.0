@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/given.css">
     <title>Given</title>
-    <link rel="icon" 
-    type="image/png" 
-    href="../IMGS/Ilustração-Guitarra-PNG.png" />
+    <link rel="icon" type="image/png" href="../IMGS/Ilustração-Guitarra-PNG.png" />
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
@@ -20,33 +19,38 @@
             <nav>
                 <ul>
 
-
+                
                     <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
                     <li><a href="totoro.html">TOTORO</a></li>
                     <li><a href="given.html">GIVEN</a></li>
                     <li><a href="paranorman.html">PARANORMAN</a></li>
                     <li><a href="kimetsu.html">SLAYER</a></li>
                     <li><a href="jogos.html">JOGOS</a></li>
-                    <li><a href="index.html">RETORNAR</a></li>
+
+                    <li onclick="logoff()">RETORNAR</li>
+                  
 
                 </ul>
             </nav>
         </div>
 
     </div>
+
+
+    <span id="usuario_nome" style="display: none; position: absolute; left: 450px;font-size: 22px; color: white; top: 50px;">Olá, <b id="b_usuario"></b></span>
     <!--FIM DO CABECALHO-->
 
 
 
     <!--INICIO DO CONTEÚDO-->
 
-    
+
 
     <!--INÍCIO DO VÍDEO-->
 
     <div class="div_video">
 
-      <img class="img_animacao" src="https://a-static.besthdwallpaper.com/anime-dada-papel-de-parede-1440x960-32037_37.jpg" alt="">
+        <img class="img_animacao" src="../IMGS/given_fundo.jpg" alt="">
     </div>
 
     <!--FIM DO VÍDEO-->
@@ -66,7 +70,10 @@
 
         <div class="div_texto">
             <span>
-                <p>Given é uma obra original de Natsuki Kizu (autora do também maravilhoso Links) que conta a história de quatro jovens completamente diferentes, apaixonados pela música e – obviamente – com seus problemas emocionais pessoais que se ligam diretamente com a música de um jeito ou de outro.<p>
+                <p>Given é uma obra original de Natsuki Kizu (autora do também maravilhoso Links) que conta a história
+                    de quatro jovens completamente diferentes, apaixonados pela música e – obviamente – com seus
+                    problemas emocionais pessoais que se ligam diretamente com a música de um jeito ou de outro.
+                <p>
 
             </span>
 
@@ -91,13 +98,13 @@
 
         <div id="div_personagens">
 
-            
+
             <img id="img_personagem" src="" alt="">
-         
 
-         <div id="informacoes_personagem"></div>
 
-     </div>
+            <div id="informacoes_personagem"></div>
+
+        </div>
 
         <!--FIM DA PARTE DOS PERSONAGENS-->
 
@@ -109,26 +116,44 @@
 
         <span>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Given é uma série de mangá escrita e ilustrada por Natsuki Kizu, publicada bimestralmente pela revista
+                de mangás Cheri+ desde 2003, tornando-se cinco volumes tankoubon pela Shinshokan. Também recebeu uma
+                adaptação para anime em 2019 pelo estúdio Lerche com 11 episódios e está disponível no site de streaming
+                de anime Crunchyroll. Um filme está sendo produzido pela Blue Lynx e deverá ser lançado em 2020. Além
+                desta adaptação, a série também recebeu um audio drama em 2016.
             </p>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                Muitas tramas do gênero yaoi orbitam ao redor de problemas como a falta de comunicação e imaturidade
+                emocional dos personagens, sendo assim, narrativas que envolvem amores platônicos, maus entendidos,
+                relacionamentos tóxicos, ciúmes, insegurança e supressão se sentimentos amorosos são muito comuns.
             </p>
 
-            <img class="img_camera" src="https://i.pinimg.com/originals/ca/80/fc/ca80fc35071be07baa906613a1657e1e.jpg" alt="">
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
-            </p>
+            <img class="img_camera" src="../IMGS/given_camera.jpg" alt="">
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati doloremque placeat rerum autem, quidem eos ipsam nostrum illo nam id, sed harum quis optio maxime ullam soluta dolores aut.
+                O que ocorre em Given é, uma tentativa de explorar relacionamentos saudáveis. Por exemplo, enquanto é
+                comum que um personagem se feche em relação ao seus sentimentos para os demais e que estes sentimentos
+                apenas sejam confrontados em uma briga onde um personagem obriga o outro a confessar seus sentimentos e
+                normalmente acaba com um personagem se sentindo oprimido e o outro arrependido, em Given temos Ritsuka
+                respeitando o tempo que Mafuyu leva para se abrir, não o obrigando a fazê-lo até que este se sinta
+                pronto.
             </p>
+
+            <p>
+                Elisabeth Kubler-Ross é uma psiquiatra que conseguiu identificar as 5 fases do luto, reações psíquicas
+                que ocorrem em pessoas quando elas lidam com uma perda ou quando se encontram em fase terminal, sendo
+                elas: Negação, raiva, barganha, depressão e aceitação.
+            </p>
+
+            <p>A superação de cada fase até a aceitação deve vir quando os sentimentos e pensamentos que o indivíduo
+                tende a evitar são externalizados pelo mesmo. Deve-se enfrentar e vivenciar estes sentimentos de luto
+                até que a aceitação aconteça.</p>
+
+            <p>
+                Em Given vemos as diferentes fases do luto em dois personagens: Kashima, antigo baixista da banda de
+                Yuuki ainda está no estágio da raiva, culpando Mafuyu pelo suicídio de seu amigo, enquanto Mafuyu ruma
+                da depressão para o estágio da aceitação.</p>
 
 
         </span>
@@ -147,7 +172,7 @@
     <!--INÍCIO DO RODAPÉ-->
     <div class="rodape">
         &copyCopyright-2021-Bandtec-Amanda Fruteiro de Lima
-        
+
     </div>
     <!--FIM DO RODAPÉ-->
 
@@ -157,11 +182,14 @@
 
 <script>
 
-function aparecer_personagem_1() {
+    let usuario;
+    verificar_autenticacao();
 
-div_personagens.style.display = 'block';
-img_personagem.src = '../IMGS/mafuyu_4.jpg';
-informacoes_personagem.innerHTML = `<br><b>Nome:</b>Mafuyu Sato<br>
+    function aparecer_personagem_1() {
+
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/mafuyu_4.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Mafuyu Sato<br>
 <b>Cargo:</b>Vocalista/Guitarrista<br>
 <b>Idade:</b>16 anos<br>
 Mafuyu Sato frequenta a mesma escola que Uenoyama. Ele também tem uma voz impressionante para cantar. Desde que pediu a Uenoyama para consertar sua guitarra, ele se apegou emocionalmente a Uenoyama. “Foi uma chance para eu consertar o violão, então me apeguei ao verão.” Ele se junta a sua banda com Haruki e Akihiko. Mafuyu é dono de um Pomeranian de nove meses chamado Kedama.`
@@ -169,57 +197,57 @@ Mafuyu Sato frequenta a mesma escola que Uenoyama. Ele também tem uma voz impre
 
 
 
-}
+    }
 
-function aparecer_personagem_2() {
+    function aparecer_personagem_2() {
 
-div_personagens.style.display = 'block';
-img_personagem.src = '../IMGS/ueno.jpg'
-informacoes_personagem.innerHTML = `<br><b>Nome:</b>Ritsuka Uenoyama<br>
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/ueno.jpg'
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Ritsuka Uenoyama<br>
 <b>Cargo:</b>Guitarrista<br>
 <b>Idade:</b>16 anos<br>
 Ritsuka Uenoyama é um dos principais personagens da história de Given. Ele é um guitarrista talentoso com uma mentalidade forte, apesar de ser apenas um estudante do ensino médio. Numa banda com Akihiko e Haruki, um dia ele se encontra e ajuda Mafuyu com sua guitarra.`
 
 
 
-}
+    }
 
-function aparecer_personagem_3() {
+    function aparecer_personagem_3() {
 
-div_personagens.style.display = 'block';
-img_personagem.src = '../IMGS/haruki_2.jpg'
-informacoes_personagem.innerHTML = `<br><b>Nome:</b>Haruki Nakayama<br>
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/haruki_2.jpg'
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Haruki Nakayama<br>
 <b>Cargo:</b>Baixista<br>
 <b>Idade:</b>22 anos<br>
 Haruki Nakayama é um estudante de graduação e baixista da banda de Ritsuka. Ele é o membro mais velho da banda. Uma boa figura de irmão e muito bem humorado. Haruki é gentil e de coração puro. Ele é despreocupado e alegre tanto em suas interações com os outros quanto tocando baixo, cantarolando ocasionalmente dependendo de seu capricho.`
 
 
-}
+    }
 
-function aparecer_personagem_4() {
+    function aparecer_personagem_4() {
 
-div_personagens.style.display = 'block';
-img_personagem.src = '../IMGS/aki.jpg';
-informacoes_personagem.innerHTML = `<br><b>Nome:</b>Akihiko Kaji<br>
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/aki.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Akihiko Kaji<br>
 <b>Cargo:</b>Baterista<br>
 <b>Idade:</b>20 anos<br>
 Akihiko Kaji é um dos principais personagens da história de Given. O baterista da banda, Akihiko, também é bastante talentoso no violino, guitarra e baixo. Ele é o namorado de Ugetsu e descrito como um cara popular.`
 
 
 
-}
+    }
 
-function aparecer_personagem_5() {
+    function aparecer_personagem_5() {
 
-div_personagens.style.display = 'block';
-img_personagem.src = '../IMGS/ugetsu.jpg';
-informacoes_personagem.innerHTML = `<br><b>Nome:</b>Ugetsu Murata<br>
+        div_personagens.style.display = 'block';
+        img_personagem.src = '../IMGS/ugetsu.jpg';
+        informacoes_personagem.innerHTML = `<br><b>Nome:</b>Ugetsu Murata<br>
 <b>Cargo:</b>Violinista Profissional<br>
 <b>Idade:</b>21 anos<br>
 Ugetsu Murata é um violinista de renome mundial, bem como um estudante universitário. Ele é o colega de quarto e de classe de Akihiko. Ele é colega de classe de Akihiko desde os tempos de colégio. Embora seja colega de quarto de Akihiko, ele às vezes viaja para o exterior vindo do Japão.`
 
 
 
-}
+    }
 
 </script>

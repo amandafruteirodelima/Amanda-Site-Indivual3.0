@@ -1,0 +1,75 @@
+API-CADASTRO
+
+1.config.js- Neste documento devo alterar os dados do banco de dados na nuvem e local somente;
+
+Models-index.js- não mexerei nada por enquanto;
+leitura.js-não mexer em nada por enquanto;
+
+usuario.js-aqui é onde estará o mapeamento da tabela cadastro e usuário que deve ser a mesma;
+
+public é onde estará seu site que deve estar lá dentro; fora o documento funcoes.js e as funcoes no script de login e cadastro;
+além disso n esquecer o formulário;
+-modificar os names de login , senha , nome
+
+Em routs-index.js não mexer em nada;
+leitura.js-n mexer em nada
+usuario.js-não mexer em nada(a menos q eu mude a estrutura da tabela);
+
+Em app.js- mudar o meio se será production ou dev;
+
+
+Como adaptar para nosso site:
+1°Criei uma tabela num banco de dados novo com nome USUARIOS_CLIENTES;
+campos ID_USUARIOS_CLIENTES INT PRIMARY KEY AUTO_INCREMENT,
+NOME VARCHAR (45),
+LOGIN VARCHAR (75),
+SENHA VARCHAR (20)
+)auto_increment= 500;
+
+select*from USUARIOS_CLIENTES;
+
+2°Linkei em config.js o meu banco de dados-No caso local, porém mesmo esquema com o da nuvem;
+
+3°Ir em app.js e modificar seu ambiente-production se for na nuvem ou dev se for no localhost;
+
+4°Ir em models e conferir se tudo está correto-é aqui que nossa tabela será mapeada;
+O que modificar?
+-Primeiramente field= nome como está na tabela(respeitando maiúsculas e etc);
+-Não mexer no 'Usuario' após sequelize.define;
+-Modificar o nome da tabela para o nome da sua tabela-igualzinho o título;
+
+Obs:Adicionar campos caso tenham a mais
+
+5°Após isso irei em public e retirarei o site do jesus(MENOS O ARQUIVO FUNCAO.JS) e colocarei o nosso; tanto site 1 quanto 2;
+OBS: Ver DICA 7° passo;
+
+OBS: Caso de algum erro pode ser que o caminho para o arquivo possa ter mudado; aí você terá que traçar a rota correta novamente;
+
+6°Devo adicionar nos campos de input o name que será o mesmo especificado em routes; logo em seguida falaremos de route;
+OBS: Os names tem q ser os mesmos tanto em cadastro quanto em login ex: senha e senha;
+nome e nome; login e login;
+
+
+7°Além disso devo retirar as nossas funçoes e adicionar as que estão no arquivo original do jesus;
+script de cadastro e login e temos que modificá-lo:
+
+Temos que:
+-Apagar função do nosso botão-cadastro e login;
+-Adicionar o formulário de cadastro e login entre campos e botão;
+-Apagar funções de aguardar;
+-Além disso apagar coisinhas a mais!
+-apagar tag a
+-apagar função do button
+
+DICA: Primeiro deixe na função do jesus antes de importar o nosso site o que queremos para o nosso; evitando que funções e itens que não existam mais em nosso site bloqueiem o funcionamento correto
+
+8°Vou em routes para ajeitar configurações importantes para possibilitar as rotas para capturar os dados;
+Routes-->Usuarios
+Lá podemos analisar que os names influenciam muito na hora de realizar as coisa; Como não colocamos names diferentes então não mexemos;
+-Modificar em cadastro o nome da tabela;
+
+Mudar home para index.html
+
+
+
+

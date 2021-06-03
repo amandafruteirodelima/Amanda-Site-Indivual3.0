@@ -1,5 +1,3 @@
-    
-
     /*INICIO DO JOGO  DO AMOR*/
 
     function expressar() {
@@ -11,11 +9,18 @@
 
         mensagem.innerHTML = "";
 
+        if (qntd_inteiro > 30) {
+            alert('Coloque um valor igual ou menor que 30!')
+        } else {
 
-        while (contador < qntd_inteiro) {
+            while (contador < qntd_inteiro) {
 
-            mensagem_amor.innerHTML += `<b>${amor}</b>, eu te amo muito! Você é o melhor personagem de todos!<br>`
-            contador++;
+                mensagem_amor.innerHTML += `<b>${amor}</b>, eu te amo muito! Você é o melhor personagem de todos!<br>`
+                contador++;
+
+
+            }
+
         }
 
     }

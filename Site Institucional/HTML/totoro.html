@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/totoro.css">
     <title>Detroit Become Human</title>
     <link rel="icon" type="image/png" href="../IMGS/totoro.png" />
+    <script src="funcoes.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,9 @@
             <nav>
                 <ul>
 
-
+                    <li>
+                        <h3 id="usuario_nome" style="display: none;">Olá, <b id="b_usuario"></b></h3>
+                    </li>
                     <li class="colorido_lista"><a href="detroit.html">DETROIT<a></li>
                     <li><a href="totoro.html">TOTORO</a></li>
                     <li><a href="given.html">GIVEN</a></li>
@@ -167,6 +170,10 @@
 </html>
 
 <script>
+
+
+    let usuario;
+    verificar_autenticacao();
 
     function aparecer_personagem_1() {
 

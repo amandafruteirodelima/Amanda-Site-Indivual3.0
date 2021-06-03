@@ -75,7 +75,7 @@ a:hover {
 
 /*INICIO DO VIDEO*/
 
-.img_animacao{
+.img_animacao {
     width: 100%;
     height: 100%;
 }
@@ -143,7 +143,7 @@ a:hover {
 .div_but_personagens {
     text-align: center;
     margin-top: 50px;
-  
+
 }
 
 
@@ -185,7 +185,7 @@ a:hover {
     height: 310px;
     width: 260px;
     transition: 0.5s;
-  
+
 
 }
 
@@ -203,7 +203,7 @@ a:hover {
     text-align: justify;
     padding-left: 15px;
     padding-right: 15px;
-  
+
 }
 
 span {
@@ -216,8 +216,8 @@ span {
 }
 
 .img_camera {
-    width: 300px; 
-    padding-left: 330px;
+    width: 500px;
+    padding-left: 230px;
 }
 
 
@@ -235,7 +235,7 @@ span {
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -2300px;
+    bottom: -2400px;
     padding-top: 20px;
 
 }

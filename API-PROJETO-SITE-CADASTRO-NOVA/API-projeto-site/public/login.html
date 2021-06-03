@@ -37,7 +37,6 @@
 
   <div class="conteudo">
     <!--INÍCIO DO CONTEÚDO DO LOGIN-->
-
     <form id="form_login" method="post" onsubmit="return entrar()">
       <div class="form login">
 
@@ -45,18 +44,16 @@
 
         <label>
           <span>Endereço de Email</span>
-          <input id="inpt_email" type="email" name="login">
+          <input type="email" name="login" required>
         </label>
 
         <label>
           <span>Senha</span>
-          <input id="inpt_senha" type="password" name="senha">
+          <input type="password" name="senha" required>
         </label>
 
         <button class="but_logar_cadastrar">Logar</button>
     </form>
-
-    <p class="esqueceu_senha">Esqueceu a senha?</p>
 
     <div class="redes_sociais">
       <ul>
@@ -98,26 +95,25 @@
 
 
     <!--INICIO DO CONTEÚDO CADASTRO-->
-
     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
       <div class="form cadastro">
         <h2>Cadastrar-se</h2>
         <label>
           <span>Nome</span>
-          <input id="inpt_nome" type="text" name="nome">
+          <input type="text" name="nome" required>
         </label>
         <label>
           <span>Email</span>
-          <input id="inpt_email" type="email" name="login">
+          <input type="email" name="login" required>
         </label>
         <label>
           <span>Senha</span>
-          <input id="inpt_senha" type="password" name="senha">
+          <input type="password" name="senha" required>
         </label>
         <label>
           <span>Animação Preferida</span>
-          <select class="combo_sel" name="animacao" id="sel_animacao">
+          <select class="combo_sel" name="animacao" id="sel_animacao" required>
             <option value="">-- Selecione uma animação --</option>
             <option value="100">Detroit Become Human</option>
             <option value="101">Meu Amigo Totoro</option>
@@ -128,7 +124,7 @@
         </label>
         <label>
           <span>Personagem Preferido</span>
-          <select class="combo_sel" name="personagem" id="sel_personagem">
+          <select class="combo_sel" name="personagem" id="sel_personagem" required>
             <option value="">-- Selecione um personagem --</option>
 
             <option value="200">Connor-DBH</option>
@@ -160,7 +156,6 @@
           </select>
         </label>
         <button class="but_logar_cadastrar">Cadastrar-se</button>
-
       </div>
     </form>
   </div>
@@ -183,17 +178,8 @@
 
 <script>
 
+
   function cadastrar() {
-
-    var nome = inpt_nome.value;
-    var email = inpt_email.value;
-    var senha = inpt_senha.value;
-    var animacao = sel_animacao.value;
-    var personagem = sel_personagem.value;
-
-
-
-
 
     var formulario = new URLSearchParams(new FormData(form_cadastro));
     fetch("/usuarios/cadastrar", {
@@ -201,41 +187,24 @@
       body: formulario
     }).then(function (response) {
 
-      if (nome == "" || email == "" || senha == "" || animacao == "" || personagem == "") {
-        alert('Cadastro inválido!')
-      }
+      if (response.ok) {
 
-      else {
+        window.location.href = 'login.html';
 
-        if (response.ok) {
+      } else {
 
-          alert('Cadastro realizado com sucesso!')
-          window.location.href = 'login.html';
+        console.log('Erro de cadastro!');
+        response.text().then(function (resposta) {
 
-        } else {
-          alert('Cadastro inválido tente novamente!')
-          console.log('Erro de cadastro!');
-          response.text().then(function (resposta) {
-
-          });
-
-        }
+        });
 
       }
     });
 
     return false;
-
   }
 
-
   function entrar() {
-
-    var email = inpt_email.value;
-    var senha = inpt_senha.value;
-
-
-
 
     var formulario = new URLSearchParams(new FormData(form_login));
     fetch("/usuarios/autenticar", {
@@ -250,15 +219,12 @@
           sessionStorage.login_usuario_meuapp = json.login;
           sessionStorage.nome_usuario_meuapp = json.nome;
 
-          alert('Login realizado com sucesso!');
-
           window.location.href = 'detroit.html';
         });
 
       } else {
 
         console.log('Erro de login!');
-        alert('Login inválido tente novamente!');
 
         resposta.text().then(texto => {
           console.error(texto);
@@ -267,8 +233,8 @@
       }
     });
 
-
     return false;
   }
+
 
 </script>
