@@ -188,8 +188,9 @@
     }).then(function (response) {
 
       if (response.ok) {
-
+        alert('Cadastro realizado com sucesso!');
         window.location.href = 'login.html';
+
 
       } else {
 
@@ -218,12 +219,13 @@
 
           sessionStorage.login_usuario_meuapp = json.login;
           sessionStorage.nome_usuario_meuapp = json.nome;
-
+          alert('Login realizado com sucesso!');
           window.location.href = 'detroit.html';
         });
 
       } else {
 
+        alert('Falha no Login tente novamente!');
         console.log('Erro de login!');
 
         resposta.text().then(texto => {

@@ -74,10 +74,7 @@ foreign key (fk_personagem) references Personagem(idPersonagem)
 )auto_increment = 1;
 
 
-	
 select*from usuario;
-
-
 
 
 
