@@ -7,11 +7,12 @@
         var qntd = Number(inpt_quanto.value);
         var qntd_inteiro = parseInt(qntd);
 
-        mensagem.innerHTML = "";
+        mensagem_amor.innerHTML = "";
 
         if (qntd_inteiro > 30) {
             alert('Coloque um valor igual ou menor que 30!')
         } else {
+         
 
             while (contador < qntd_inteiro) {
 

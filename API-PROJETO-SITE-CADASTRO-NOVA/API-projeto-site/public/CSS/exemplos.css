@@ -102,32 +102,32 @@ body {
 .titulo_pag {
     color: white;
     background-color: rgba(0, 0, 0, 0.473);
-    font-size: 40px;
+    font-size: 2.5em;
     border-radius: 25px;
 }
 
 .but_login {
     display: block;
     margin: 0 auto;
-    width: 300px;
+    width: 35%;
     height: 46px;
     border-radius: 30px;
     color: #fff;
-    font-size: 25px;
+    font-size: 1.6em;
     cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     background: -webkit-linear-gradient(left, #b224ef, #fd3460);
-    border: 0px;
+    border: 0;
 
 }
 
 .but_login:hover {
     background: -webkit-linear-gradient(left, #fd3460, #b224ef);
-    width: 320px;
+    width: 37%;
     height: 56px;
     transition: 0.5s;
 }
@@ -149,11 +149,11 @@ body {
     background-color: #9c53ed;
     text-align: center;
     color: white;
-    height: 40px;
+    height: 7%;
     position: absolute;
     width: 100%;
-    bottom: -200px;
-    padding-top: 20px;
+    bottom: -32%;
+    padding-top: 2%;
 }
 
 /*FIM DO RODAPÉ*/

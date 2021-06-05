@@ -91,8 +91,8 @@ body {
 
 .caixa_conteudo {
     background-color: rgba(255, 255, 255, 0.849);
-    height: 500px;
-    width: 700px;
+    height: 77%;
+    width: 51.5%;
     position: absolute;
     left: 25%;
     top: 30%;
@@ -103,16 +103,16 @@ body {
 
 .conteudo h1 {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .inpt_padrao {
     background-color: rgb(230, 230, 230);
     height: 30px;
-    width: 300px;
+    width: 43%;
     border: 1.5px solid rgb(167, 167, 167);
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .inputs {
@@ -122,13 +122,13 @@ body {
 
 .but_enviar {
     display: block;
-    border: 0px;
-    margin: 25px auto;
-    width: 260px;
+    border: 0;
+    margin: 4% auto;
+    width: 38%;
     height: 36px;
     border-radius: 30px;
     color: #fff;
-    font-size: 15px;
+    font-size: 1em;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
@@ -141,9 +141,9 @@ body {
 }
 
 #mensagem_email {
-    margin-top: 3px;
-    padding-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 0.5%;
+    padding-top: 1%;
+    margin-bottom: 0;
 
 }
 
@@ -157,13 +157,13 @@ body {
     background-color: #0396a6;
     text-align: center;
     color: white;
-    height: 40px;
+    height: 7%;
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -200px;
+    bottom: -35%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 2%;
 
 
 }
